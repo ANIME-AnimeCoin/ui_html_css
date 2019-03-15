@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <title>Nephos Documentation</title>
+        <meta name="description" content="Free responsive HTML template for your documentation">
+        <meta name="author" content="Css Ninja">
+        <meta name="format-detection" content="telephone=no">
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="css/prettify.css">
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" >
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2 col-xs-12 left">
+                        <div id="logo">
+                            <img src="images/nephos-logo-white.svg" alt="vdoc">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-7 col-xs-12">
+                        <div class="slogan">
+                            1.0 | Documentation
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-xs-12 right">
+                        <a class="btn" href="https://cssninja.io" target="_blank">Support</a>
+                    </div>
+                    <div class="col-lg-2 col-md-3 col-xs-12 right">
+                        <a class="btn" href="https://docs.nephos.cssninja.io" target="_blank">Online Docs</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="content">
+            <div class="container">
+                <div class="content-wrap">
+                    <div class="row">
+                        <aside>
+                            <div class="menu-box">
+                                <h4>NEPHOS DOCS</h4>	
+                                <nav>
+                                    <ul>
+                                        <li><a href="#start" class="current">Welcome</a></li>
+                                        <li><a href="#get-started">Get Started</a></li>
+                                        <li><a href="#template-structure">Template Structure</a></li>
+                                        <li><a href="#gulp">Working with Gulp</a></li>
+                                        <li><a href="#theming">Theming</a></li>
+                                        <li><a href="#css-ref">CSS Reference</a></li>
+                                        <li><a href="#js-ref">JS Reference</a></li>
+                                        <li><a href="#support">Support</a></li>
+                                        <li><a href="#changelog">Changelog</a></li>
+                                    </ul>					
+                                </nav>
+                            </div>
+                        </aside>
+                        <div class="content-info">
+
+                            <div class="section-txt" id="start">
+                                <h2>Welcome</h2>
+                                <p>First of all, Thank you so much for purchasing this template and for being our loyal customer. You are awesome! You are entitled to get free lifetime updates to this product and support from the css ninja team directly.</p>
+                                
+                                <p>This documentation is available as a local documentation that you can use offline, on your computer. However, for a better documentation browsing and search experience, we recommend you to use the <a href="https://docs.nephos.cssninja.io" target="_blank">Online Documentation</a>.</p>
+                                
+                                <p>This documentation has been written to help you regarding each step of customization. Please go through the documentation carefully to understand how this template is made and how to edit this properly. HTML and CSS knowledge is required to customize this template.</p>
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Be careful before you start working with the template and read the documentation. If not edited properly, layouts may break completely. No support is provided for faulty customization.</span>
+                                </p>
+                            </div>
+
+                            <div class="section-txt" id="get-started">
+                                <h2>Getting started</h2>
+                                <h3>What is Nephos</h3>
+                                <p>Nephos is a starter ecommerce application frontend written with <strong>bulma css</strong>, <strong>sass</strong>, <strong>jquery</strong>. All the project is managed with <strong>Gulp</strong>, a frontend task automation tool. Nephos 1.0 ships with 21 ready to use app pages and an element page, wich features some additional components you can use to extend the existing pages or to create new ones. With Nephos, we offer you a first class frontend, with a sharp, clean and modern design. We wrote this documentation to help you understand every aspect of the template, especially for beginners. We hope you will like it. So let’s get started !</p>
+                                <h3><a id="Support_12"></a>Support</h3>
+                                <p>If you have any trouble while editing this template or if you simply want to ask a question about something, feel free to contact us at <a href="mailto:support@cssninja.io">support@cssninja.io</a> or to post your request on our support forums at <a href="https://cssninja.io/forum">cssninja.io</a></p>
+                                <h3>Prerequisites</h3>
+                                <p>You will need the following tools to customize this template.</p>
+                                <ul>
+                                    <li>A good code editor of your choice</li>
+                                    <li>A supported web browser</li>
+                                    <li><code>node.js</code> and <code>npm</code> installed on your machine</li>
+                                    <li>Intermediate <code>html</code> knowledge</li>
+                                    <li>Intermediate <code>scss</code> knowledge</li>
+                                    <li>Basic <code>javascript</code> knowledge</li>
+                                </ul>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Be careful before you start working with the template and read the documentation. If not edited properly, layouts may break completely. No support is provided for faulty customization.</span>
+                                </p>
+
+                                <h3>Template versions</h3>
+                                <p>You will find 2 zipped versions of Nephos inside your main download file: <strong>nephos-html</strong> and <strong>nephos-gulp</strong>. The first one is a static html version, for developers who prefer to handle good old html files. The second one is a <strong>nodejs</strong> managed version that gives you full control over the template files, and a great development experience. It’s up to you to decide wich version you want to work with.</p>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Note that <strong>nephos-html</strong> version results from the build of the <strong>nephos-gulp</strong> version. Therefore this documentation will rather focus on <strong>nephos-gulp</strong>, detailing all its additional features.</span>
+                                </p>
+
+                                <h3>Working with the html version</h3>
+                                <p>If you want to work with the html version, simply unzip the <strong>nephos-html</strong> folder inside the public folder of a local development server. You can either use <a href="http://www.wampserver.com/">WAMP</a> , <a href="https://www.mamp.info/en/">MAMP</a>, <a href="https://www.apachefriends.org/fr/index.html">XAMPP</a> or any custom local development environment of your choice. You can then work with files as you would do with any Html Template. You would have though to setup your own <strong>sass preprocessing</strong>. You can either use <strong>ruby-sass</strong> (wich has gone legacy but still works like a charm), or opt in for a more modern implementation like <strong>dart-sass</strong>. If you don’t know how to install Sass on your machine, read the <a href="https://sass-lang.com/install">Sass Installation Guide</a></p>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Note also that you won’t have any control on Bulma css with the Html version, since it is already outputed as css file. If you want to customize the Bulma variables or to remove some parts of the code, you will have to use the <strong>nephos-gulp</strong> version.</span>
+                                </p>
+
+                                <p>Once you have installed Sass, open a terminal window, and change directory to the <strong>nephos-html</strong> folder you previously copied in your development environment:</p>
+                                <pre class="prettyprint"><code>cd path/to/nephos/assets</code></pre>
+                                <p>Then, depending on the Saas version you installed, run the relevant command to start the Sass  watcher. Here is the command for <strong>ruby-sass</strong>:</p>
+                                <pre class="prettyprint"><code>sass --watch scss:css --style compressed</code></pre>
+                                <p>Your Sass watcher should now be started, every change you make to one of the Scss partials triggers an automatic recompilation of your main css file.</p>
+                                <h3><a id="Nephos_Gulp_47"></a>Nephos Gulp</h3>
+                                <p>Using the Nephos Gulp bundle will give you total control over the template. All the important tasks are fully automated, <strong>you don’t have to do anything</strong>. Howevern we will explain in details how to get the most from the template, even if you’ve never worked, with <code>npm</code>, <code>gulp</code> or <code>panini</code>.</p>
+                                <p>To avoid repeating same chunks of code, Nephos gulp also uses <strong>zurb-panini</strong>, a very lightweight html templating engine. You can quikly create easily reusable chunks of code. But before diving into the template itself, We need to setup a <strong>nodejs</strong> environment. If you already have Node and Npm installed on your machine, you can skip the following sections.</p>
+                                <h4><a id="Npm_52"></a>Npm</h4>
+                                <p>To start working with Nephos, we are going to need the <code>Node Package Manager</code>, commonly known as <code>npm</code>. npm makes it easy for JavaScript developers to share and reuse code, and makes it easy to update the code that you’re sharing, so you can build amazing things.</p>
+                                <h4><a id="Install_nodejs_55"></a>Install nodejs</h4>
+                                <p>npm is distributed with Node.js, which means that when you download Node.js, you automatically get npm installed on your computer. First, check if you already have node and npm installed. To check if you have Node.js installed, run this command in your terminal:</p>
+                                <pre class="prettyprint"><code>node -v
+</code></pre>
+                                <p>To confirm that you have npm installed you can run this command in your terminal:</p>
+                                <pre class="prettyprint"><code>npm -v
+</code></pre>
+                                <p>If node is not installed on your machine, follow the steps described in one of the following guides, depending on your operating system:</p>
+                                <ul>
+                                    <li><a href="https://treehouse.github.io/installation-guides/windows/node-windows.html" target="_blank">Windows</a> : Install node.js and npm on Windows</li>
+                                    <li><a href="https://www.ostechnix.com/install-node-js-linux/" target="_blank">Linux</a> : Install node.js and npm on Linux</li>
+                                    <li><a href="https://www.codementor.io/mercurial/how-to-install-node-js-on-macos-sierra-mphz41ekk" target="_blank">MacOS</a> : Install node.js and npm on Mac OSX</li>
+                                </ul>
+
+                                <h3><a id="npm_versions_74"></a>npm versions</h3>
+                                <p>npm is a separate project from Node.js, and tends to update more frequently. As a result, even if you’ve just downloaded Node.js (and therefore npm), you’ll probably need to update your npm. Luckily, npm knows how to update itself! To update your npm, type this into your terminal:</p>
+                                <pre class="prettyprint"><code>npm install npm@latest -g
+</code></pre>
+                                <h4><a id="Installing_gulpjs_81"></a>Installing gulp.js</h4>
+                                <p>Gulp is a “Task runner” served as a Frontend tool. It is capable of executing chunks of code and save you huge amounts of time. What gulp can do is very vast :</p>
+                                <ul>
+                                    <li>Simple operations like CSS and Javascript minification / concatenation</li>
+                                    <li>Directory creation or deletion, project creation from scratch</li>
+                                    <li>Image optimization and compression</li>
+                                    <li>Deploying a local server to run tests</li>
+                                    <li>Ghost browser simulation to test display regressions etc …</li>
+                                </ul>
+                                <p>To stay simple, Gulp will help you save tremendous amounts of time by handling recurring and automated tasks. You can then focus on your real work : produce clear and concise code, and get a coffee from time to time ! If you want to install Gulp globally on your machine, meaning that you will have access to its commands everywhere, follow the following steps. Otherwise jump to the next section.</p>
+                                <p>As soon as <code>node</code> and <code>npm</code> are installed, you can start instaling Gulp. In your terminal window, enter the following command :</p>
+                                <pre class="prettyprint"><code>npm install gulp -g
+</code></pre>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>If you are working in a Linux or a Mac OSX environment, you will probably need to add the <code>sudo</code> command to have the required rights</span>
+                                </p>
+
+                                <pre class="prettyprint"><code>sudo npm install gulp -g
+</code></pre>
+                                <p>Gulp should now be installed and ready to serve.</p>
+                                <p>To work properly, it relies on 2 files that you can find at the root of the project :</p>
+                                <ul>
+                                    <li><code>package.json</code></li>
+                                    <li><code>gulpfile.js</code></li>
+                                </ul>
+                                <p>The <code>package.json</code> file lists all your project’s developement and production dependencies installed via <code>npm</code>, an effective way to manage your project’s assets consistently. The <code>gulpfile.js</code> file contains all the task that Gulp will perform once launched.</p>
+                                <h3><a id="Installing_the_project_114"></a>Installing the project</h3>
+                                <p>Before starting editing the Nephos template, we need to install the project and go through a little setup to make it functional and running. Create a new directory for your project. For the sake of the example, we will call it <code>my-project</code>. Unzip the contents of the <strong>nephos-gulp</strong> folder inside it. We will talk about the project structure in the upcoming section :</p>
+                                <pre class="prettyprint"><code>cd path/to/my/project</code></pre>
+                                <p>Once done, you need to install the project dependencies with <code>npm</code>, that we previously installed. Enter the following command at the root of the <code>my-project</code> folder :</p>
+                                <pre class="prettyprint"><code>npm install</code></pre>
+                                <p>This will automatically fecth all the dependencies listed in your <code>package.json</code> file and install them in your project. Once the installation process is done, you are ready to start Gulp and begin developing. However, before you start we are going to take a closer look to the template structure, and to how things are organized.</p>
+                            </div>
+
+                            <div class="section-txt" id="template-structure">
+                                <h2><a id="Template_structure_125"></a>Template structure</h2>
+                                <p>This section is about the <strong>nephos-gulp</strong> file structure. You will learn how the different files are organized, but most important of all, how to manage your project with <strong>Gulp</strong>. Let’s dive into the folder structure.</p>
+                                <h3><a id="Global_structure_128"></a>Global structure</h3>
+                                <pre class="prettyprint"><code>Nephos-gulp
+|-- assets
+|     |-- css
+|     |-- data
+|     |-- fonts
+|     |-- js
+|
+|-- bulma
+|     |-- sass
+|     |-- bulma.sass
+|
+|-- html
+|     |-- includes
+|     |-- layouts
+|     |-- pages
+|
+|-- images
+|
+|-- js
+|     |-- demo.js
+|     |-- elements.js
+|     |-- Nephos.js
+|
+|-- scss
+|     |-- partials
+|     |-- core.scss
+|     |-- demo.scss
+|  
+|-- gulpfile.js 
+|-- package.json 
+|-- package-lock.json 
+
+</code></pre>
+                                <p>The directory structure can seem unusual for someone who is not used to build tools. We will break each part of it, so you understand how everything works.</p>
+                                <h3><a id="Assets_folder_167"></a>Assets folder</h3>
+                                <pre class="prettyprint"><code>|-- assets
+|     |-- css
+|     |-- data
+|     |-- fonts
+|     |-- js
+</code></pre>
+                                <p>The main reason we are working with <code>npm</code> and <code>gulp</code> is that we want to keep our development process clean, as well as our dependencies management. This kind of setup highly increases the project’s code maintainability and scalability. However, you’ll be sometimes in a situation where you could need assets that are not served via <code>npm</code> or any package manager. That is the role of the <code>assets</code> folder. You can add to it any external css, js, fonts or data that you will need to use in your project. However, always prefer the <code>npm</code> method when adding new assets. Use the assets folder only if you can’t fetch your required dependency with <code>npm</code>.</p>
+                                <h3><a id="Bulma_folder_179"></a>Bulma folder</h3>
+                                <pre class="prettyprint"><code>|-- bulma
+|     |-- sass
+|     |-- bulma.sass
+</code></pre>
+                                <p>When you installed the project by doing <code>npm install</code>, you also installed Bulma 0.6.2 as a project dependency. All bulma framework Sass source files are there. You can customize them to fit your needs or leave them as they are. If you do so, you will get the standard Bulma version (identical to the css file you can find in the bulma distibution folder in the official repo) when you build the project. We provided this option as numerous developers want to have control on this for code optimization purposes.</p>
+                                <p>!&gt; Edit the Bulma source files only if you know what you are doing as any faulty customization may completely break the layout.</p>
+                                <h3><a id="Html_folder_191"></a>Html folder</h3>
+                                <pre class="prettyprint"><code>|-- html
+|     |-- includes
+|     |-- layouts
+|     |-- pages
+</code></pre>
+                                <p>All the html code resides in this folder. For a more concise code, Nephos html uses a flat file compiler named <strong>Panini</strong>, by <strong>Zurb</strong>. Panini makes it easy to break your layouts into several reusable components, preventing you to go through every page to make your changes. You can find more information about <strong>zurb/panini</strong> by visiting the <a href="https://github.com/zurb/panini" target="_blank">Zurb Panini</a> official repository. Nephos follows the panini pattern for the html file structure :</p>
+                                <ul>
+                                    <li><strong>includes</strong> : the <code>includes</code> folder holds all your html partials. Partials are chunks of code that you want to reuse as is accrosse your application : it can be a button, a navbar, a content section or whatever you want. Note that you can create as many subfolders as you want to organize your partials. You simply have to make sure that your partial names are unique. Partials are named like html files : <code>navbar.html</code>. When you want to call a partial in one of your <code>layouts</code> or <code>pages</code> use the following expression : <code>{{&gt; partial-name}}</code>. You don’t have to mention the path, even if it is nested in several subfolders, <strong>panini</strong> will find it. Also note that you don’t have to add the html extension in your partial call.</li>
+                                    <li><strong>layouts</strong> : the <code>layouts</code> folder holds all the template layouts. It is <strong>mandatory</strong> to have at least one layout, and it should always be named <code>default.html</code>. Additional layouts can have the names you want, but don’t forget the <code>.html</code> extension. A layout acts as container providing the same base for a set of similar pages. Nephos uses 3 layouts, we will see the details about them later on. Finally notice the <code>{{&gt; body}}</code> call that is present in each layout file. This is a reference to append the rest of the page content.</li>
+                                    <li><strong>pages</strong> : the <code>pages</code> folder holds all the template pages. Pages are focused on content. They are related to a layout and automatically appended to it by <strong>panini</strong> when the page is served. You will always find the same statement at the top of each page’s code :</li>
+                                </ul>
+                                <pre class="prettyprint"><code>---
+layout: default
+title: This is the page title
+---
+</code></pre>
+                                <p>The <code>layout</code> statement tells <strong>panini</strong> wich layout to use to serve the page. The title element is a string that gets inserted as the page title when <strong>panini</strong> has finished assembling the page parts together. Now that we had a look to panini’s basic features let’s dive into the Nephos html files :</p>
+                                <h3><a id="Html_files_216"></a>Html files</h3>
+                                <h4><a id="Includes_218"></a>Includes</h4>
+                                <pre class="prettyprint"><code>|-- html
+|     |-- includes
+|     |   |-- demo
+|     |   |-- navbars
+|     |   |-- pageloader
+|     |   |-- quickviews
+|     |   |-- search
+|     |   |-- sidebar-menu-items
+|     |   |-- demo-scripts.html
+|     |   |-- elements-scripts.html
+|     |   |-- shop-scripts.html
+</code></pre>
+                                <h5><a id="Demo_subfolder_234"></a>Demo subfolder</h5>
+                                <ul>
+                                    <li><strong><code>footer.html</code></strong> : Holds the <code>footer</code> partial used by the template <code>index.html</code> page.</li>
+                                </ul>
+                                <h5><a id="Navbars_subfolder_237"></a>Navbars subfolder</h5>
+                                <ul>
+                                    <li><code>mobile-navbar-guest.html</code> : Holds the mobile navbar partial used by the majority of Nephos shop pages. This is the guest version.</li>
+                                    <li><code>mobile-navbar-user.html</code> : Holds the mobile navbar partial used by the majority of Nephos shop pages. This is the logged in user version.</li>
+                                </ul>
+                                <h5><a id="Pageloader_subfolder_241"></a>Pageloader subfolder</h5>
+                                <ul>
+                                    <li><code>pageloader-full.html</code> : Holds the fullwidth pageloader partial used by the template <code>index.html</code> page.</li>
+                                    <li><code>pageloader.html</code> : Holds the spaced pageloader partial used by all Nephos shop pages.</li>
+                                </ul>
+                                <h5><a id="Quickviews_subfolder_245"></a>Quickviews subfolder</h5>
+                                <ul>
+                                    <li><code>flying-button.html</code> : Holds the FAB button partial used whenever a shop page gives access to the right categories sidebar. Clicking on this button triggers it.</li>
+                                    <li><code>quickview-cart-empty.html</code> : Holds the empty cart sidebar partial used by some of the shop pages.</li>
+                                    <li><code>quickview-cart-full.html</code> : Holds the filled cart sidebar partial used by some of the shop pages.</li>
+                                    <li><code>quickview-cart-full-alt.html</code> : Holds another filled cart sidebar partial used by some of the shop pages.</li>
+                                    <li><code>quickview-categories.html</code> : Holds the product categories sidebar partial used by a majority of the shop pages.</li>
+                                    <li><code>quickview-filters.html</code> : Holds the filters sidebar partial used by the product grid and the product list.</li>
+                                    <li><code>quickview-main-guest.html</code> : Holds the main dark sidebar partial used by all the shop pages. This is the guest version.</li>
+                                    <li><code>quickview-main-user.html</code> : Holds the main dark sidebar partial used by all the shop pages. This is the logged in user version.</li>
+                                </ul>
+                                <h5><a id="Search_subfolder_255"></a>Search subfolder</h5>
+                                <ul>
+                                    <li><code>search-overlay.html</code> : Holds the snippet that controls the global product search and it’s overlay. Used by all the shop pages</li>
+                                </ul>
+                                <h5><a id="Sidebar_menu_items_subfolder_258"></a>Sidebar menu items subfolder</h5>
+                                <ul>
+                                    <li><code>sidebar-item-cart-active.html</code> : Holds the active cart icon menu item of the shop’s main sidebar. Triggers the cart sidebar when clicking on it.</li>
+                                    <li><code>sidebar-item-cart.html</code> : Holds the inactive cart icon menu item of the shop’s main sidebar. Triggers the cart sidebar when clicking on it.</li>
+                                    <li><code>sidebar-item-filters.html</code> : Holds the filters icon menu item of the shop’s main sidebar. Triggers the filters sidebar when clicking on it.</li>
+                                    <li><code>sidebar-item-guest.html</code> : Holds the guest user menu item of the shop’s main sidebar. Redirects to the login page when clicking on it.</li>
+                                    <li><code>sidebar-item-logout.html</code> : Holds the logout icon menu item of the shop’s main sidebar. Redirects to the login page when clicking on it.</li>
+                                    <li><code>sidebar-item-mode.html</code> : Holds the mobile mode icon menu item of the shop’s main sidebar. Brings back the responsive navbar and hides the shop main sidebar on mobile when clicked.</li>
+                                    <li><code>sidebar-item-search.html</code> : Holds the search icon menu item of the shop’s main sidebar. opens the search overlay when clicking on it.</li>
+                                </ul>
+                                <h5><a id="Root_files_267"></a>Root files</h5>
+                                <ul>
+                                    <li><code>demo-scripts.html</code> : Holds a snippet with the scripts declaration for the <code>index.html</code> page.</li>
+                                    <li><code>element-scripts.html</code> : Holds a snippet with the scripts declaration for the <code>elements.html</code> page.</li>
+                                    <li><code>shop-scripts.html</code> : Holds a snippet with the scripts declaration for all the shop pages.</li>
+                                </ul>
+                                <h4><a id="Layouts_272"></a>Layouts</h4>
+                                <p>The <code>html/layouts/</code> folder holds 3 layout files:</p>
+                                <ul>
+                                    <li><code>default.html</code> : The default layout used by all the shop pages.</li>
+                                    <li><code>components.html</code> : Asimilar layout, but with additional scripts used by the <code>elements.html</code> page.</li>
+                                    <li><code>demo.html</code> : A demo layout used for the <code>index.html</code> page.</li>
+                                </ul>
+                                <h4><a id="Pages_278"></a>Pages</h4>
+                                <p>All html pages live in this folder. Each one of this pages is linked ot one of the <strong>3 existing layouts</strong> and makes use of partials living in the <code>html/includes/</code> folder. There is a total of 23 html pages:</p>
+                                <ol>
+                                    <li><strong>Index.html</strong> : Nephos presentation landing page</li>
+                                    <li><strong>home.html</strong> : Nephos shop homepage with a fullscreen slider</li>
+                                    <li><strong>home-alt.html</strong> : Nephos shop homepage with a static image</li>
+                                    <li><strong>shop.html</strong> : displays the shop categories</li>
+                                    <li><strong>products.html</strong> : displays a product grid based on cards</li>
+                                    <li><strong>products-list.html</strong> : displays a list version of the products</li>
+                                    <li><strong>product.html</strong> : a single product page</li>
+                                    <li><strong>product-carousel.html</strong> : carousel version of the single product page</li>
+                                    <li><strong>account.html</strong> : displays the user account page</li>
+                                    <li><strong>account-edit.html</strong> : displays the edit account page</li>
+                                    <li><strong>wishlist.html</strong> : displays the user wishlists</li>
+                                    <li><strong>cart.html</strong> : displays the user cart page</li>
+                                    <li><strong>cart-empty.html</strong> : displays an empty version of the cart page</li>
+                                    <li><strong>orders.html</strong> : displays an order tracking page based on a card grid</li>
+                                    <li><strong>orders-list.html</strong> : displays a list version of orders</li>
+                                    <li><strong>invoice.html</strong> : display an invoice</li>
+                                    <li><strong>checkout-step1.html</strong> : displays the first step of the checkout process</li>
+                                    <li><strong>checkout-step2.html</strong> : displays the second step of the checkout process</li>
+                                    <li><strong>checkout-step3.html</strong> : displays the third step of the checkout process</li>
+                                    <li><strong>checkout-step4.html</strong> : displays the fourth step of the checkout process</li>
+                                    <li><strong>checkout-step5.html</strong> : displays the fifth step of the checkout process</li>
+                                    <li><strong>authentication.html</strong> : displays the login and register form</li>
+                                    <li><strong>elements.html</strong> : displays the available Nephos elements</li>
+                                </ol>
+                                <h3><a id="Images_306"></a>Images</h3>
+                                <pre class="prettyprint"><code>|-- images
+|     |-- avatars
+|     |-- bg
+|     |-- brands
+|     |-- icons
+|     |-- logo
+|     |-- ui
+</code></pre>
+                                <p>All the project images live in this folder. It can have as many subfolders as you want. When you build the projects, all these images are automatically transfered to the right location by Gulp. We will see that a bit later.</p>
+                                <h3><a id="Js_318"></a>Js</h3>
+                                <pre class="prettyprint"><code>|-- js
+|     |-- demo.js
+|     |-- elements.js
+|     |-- Nephos.js
+|     
+</code></pre>
+                                <p>All of Nephos own javascript files live in this folder. There are 3 main files :</p>
+                                <ul>
+                                    <li><code>demo.js</code> : Holds all the functions used by the <code>index.html</code> demonstration page.</li>
+                                    <li><code>elements.js</code> : Holds all the functions needed to operate the elements listed in the <code>elements.html</code> components page.</li>
+                                    <li><code>Nephos.js</code> : Holds all the functions used by the Nephos template.</li>
+                                </ul>
+                                <h3><a id="Scss_333"></a>Scss</h3>
+                                <pre class="prettyprint"><code>scss
+|-- partials
+|     |-- _account.scss
+|     |-- _auth.scss
+|     |-- _buttons.scss
+|     |-- _cards.scss
+|     |-- _cart.scss
+|     |-- _categories.scss
+|     |-- _checkboxes.scss
+|     |-- _checkout.scss
+|     |-- _colors.scss
+|     |-- _filters.scss
+|     |-- _forms.scss
+|     |-- _invoice.scss
+|     |-- _layout.scss
+|     |-- _orders.scss
+|     |-- _pageloader.scss
+|     |-- _product.scss
+|     |-- _quickview.scss
+|     |-- _responsive.scss
+|     |-- _search.scss
+|     |-- _sidebar.scss
+|     |-- _theme-default.scss
+|     |-- _utils.scss
+|
+|-- core.scss
+|-- demo.scss
+
+</code></pre>
+                                <p>Nephos relies on the powerful Sass features, letting you handle complex styles in a breeze. Nephos relies on a modular scss structure. You need to import all the SCSS partials into your core file. This how scss files are organized.</p>
+                                <h4><a id="Core_and_partials_368"></a>Core and partials</h4>
+                                <p>There are two main types of Scss files in Nephos : Core and Partials.</p>
+                                <p><strong>Partial files</strong></p>
+                                <p>Partial SCSS file names <strong>always</strong> start with an underscore like this: <code>_account.scss</code> . They act as chunks of code that are imported into a core SCSS file. Not only this gives you great control over your code, but it also greatly enhances it’s maintainability. Nephos ships with 2 main types of SCSS partials:</p>
+                                <ul>
+                                    <li>Global partials: partials that are used globally in the Template.</li>
+                                    <li>Theme partials: theme partials share the same naming convention : <code>_theme-*</code> where <code>*</code> stands for the theme name. For en example, the defaul theme is named <code>_theme-default.scss</code>. Importing a theme partial in your project is mandatory. Otherwise, it won’t work.</li>
+                                </ul>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Make sure that you are only importing one theme at a time in your Core file imports. Otherwise, you could experience some strange behaviour or break your project.</span>
+                                </p>
+
+                                <p><strong>Core file</strong></p>
+                                <p>The <code>core.scss</code> file centralizes all Nephos styles. Every time you make a change in a partial file, it impacts the outputed <code>core.css</code> file resulting from the compilation process (wich is handled by Gulp, as we saw above). The Nephos core SCSS file starts by importing all the needed SCSS partials. Here is an the statement:</p>
+                                <pre class="prettyprint"><code><span>/*! core.scss | Nephos | CSS Ninja */</span>
+
+<span class="hljs-comment">/* ==========================================================================
+Nephos core 
+========================================================================== */</span>
+
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/theme-default'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/colors'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/sidebar'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/quickview'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/cards'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/layout'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/categories'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/account'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/cart'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/orders'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/product'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/checkout'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/auth'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/buttons'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/search'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/filters'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/checkboxes'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/forms'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/invoice'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/pageloader'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/utils'</span>;</span>
+<span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/responsive'</span>;</span>
+</code></pre>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Notice how partials are imported. Whereas the actual partial file name starts with an underscore and ends with a .scss extension, when you write imports inside your <b>core.scss</b> file, you have to remove the undescore and the <b>.scss</b> extension.</span>
+                                </p>
+
+                                <h4><a id="Imports_417"></a>Imports</h4>
+                                <p>Let’s break a bit the list of imports we saw above, so we can understand how the global stylesheet is structured and how it impacts the final outputed style</p>
+                                <ol>
+                                    <li>The first line imports the selected theme. In the example above, the default theme is selected (<b>_theme-default.scss</b>). Make sure to only import one theme at a time.</li>
+                                    <li>The following lines import all the components and layout elements that are needed to build the template styles.</li>
+                                    <li>Notice the two last imports : <b>_utils.scss</b> and <b>_responsive.scss</b>. These two files mainly hold helper classes and responsive classes. We want them to act as CSS modifiers. That is why we put them at the very end of our imports.</li>
+                                </ol>
+                                <p>Remember that CSS stands for <strong>Cascading stylesheets</strong>. That’s why the order also matters in some specific cases.</p>
+                                <h4><a id="Link_the_core_427"></a>Link the core</h4>
+                                <p>Once you finished writing your imports, and adding the basic css resets you want in your core file, you are ready to setup a new page. As we stated before, as soon as Gulp is running, your core file is immediatly outputed into a compiled css file. The css chunks from partials are appended one after another following the order defined in the imports. To import the core, just add a stylesheet link to the compiled css inside the <code>head</code> tags of one of your layout files, like <b>html/layouts/default.html</b>:</p>
+                                <pre class="prettyprint"><code><span class="hljs-tag">&lt;<span class="hljs-title">link</span> <span class="hljs-attribute">rel</span>=<span class="hljs-value">"stylesheet"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/css"</span> <span class="hljs-attribute">href</span>=<span class="hljs-value">"{{root}}assets/css/core.css"</span>&gt;</span>
+
+</code></pre>
+
+                                <p class="message">
+                                    <img src="images/warn.svg">
+                                    <span>Notice the <code>{{root}}</code> elements wich tells panini to get back to the root of the project to find the css stylesheet.</span>
+                                </p>
+
+                                <h3><a id="Root_files_438"></a>Root files</h3>
+                                <p>There also a few files sitting at the root of the project that we need to discuss before getting into serious business:</p>
+                                <ul>
+                                    <li><b>gulpfile.js</b> : Gulp will use this file to perform all the tasks it is supposed to accomplish.</li>
+                                    <li><b>package.json</b> : Lists all your project’s dependencies and gives useful metadata.</li>
+                                    <li><b>package-lock.json</b> : Automatically generated for any operations where <b>npm</b> modifies either the <b>node_modules</b> tree, or package.json. It describes the exact tree that was generated, such that subsequent installs are able to generate identical trees, regardless of intermediate dependency updates.</li>
+                                </ul>
+                            </div>
+
+                            <div class="section-txt" id="gulp">
+                                <h2><a id="Working_with_Gulp_445"></a>Working with Gulp</h2>
+                                <p>In this section, we are briefly going to see how to use gulp and the Nephos <code>gulpfile.js</code>.</p>
+                                <h3><a id="Available_modules_448"></a>Available modules</h3>
+                                <p>Nephos takes advantage of several gulp modules. We are going to see what each one does to give you a better understanding of what is happening. Let’s see the modules used by our gulpfile :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-keyword">var</span> gulp = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp'</span>);
+<span class="hljs-keyword">var</span> clean = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-clean'</span>);
+<span class="hljs-keyword">var</span> sass = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-sass'</span>);
+<span class="hljs-keyword">var</span> sourcemaps = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-sourcemaps'</span>);
+<span class="hljs-keyword">var</span> postcss = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-postcss'</span>);
+<span class="hljs-keyword">var</span> autoprefixer = <span class="hljs-built_in">require</span>(<span class="hljs-string">'autoprefixer'</span>);
+<span class="hljs-keyword">var</span> mq4HoverShim = <span class="hljs-built_in">require</span>(<span class="hljs-string">'mq4-hover-shim'</span>);
+<span class="hljs-keyword">var</span> rimraf = <span class="hljs-built_in">require</span>(<span class="hljs-string">'rimraf'</span>).sync;
+<span class="hljs-keyword">var</span> browser = <span class="hljs-built_in">require</span>(<span class="hljs-string">'browser-sync'</span>);
+<span class="hljs-keyword">var</span> panini = <span class="hljs-built_in">require</span>(<span class="hljs-string">'panini'</span>);
+<span class="hljs-keyword">var</span> concat = <span class="hljs-built_in">require</span>(<span class="hljs-string">'gulp-concat'</span>);
+
+</code></pre>
+                                <ul>
+                                    <li><code>gulp</code> : the base gulp package</li>
+                                    <li><code>gulp-clean</code> : A utility to clean code</li>
+                                    <li><code>gulp-sass</code> : A utility to handle saas compilation into css</li>
+                                    <li><code>gulp-sourcemaps</code> : Maps the Sass source into your compiled css</li>
+                                    <li><code>gulp-postcss</code> : Gives the ability to transfer and manipulate css before its final destination</li>
+                                    <li><code>gulp-concat</code> : A utility to concatenate outputed code</li>
+                                    <li><code>autoprefixer</code> : Automatically generates necessary vendor prefixes for your css code</li>
+                                    <li><code>mq4-hover-shim</code> : A utility to avoid hover/click problems on touche devices</li>
+                                    <li><code>rimraf</code> : A utility to remove small or large chunks of code</li>
+                                    <li><code>browser-sync</code> : A utility that launches a developemnt server with auto page refresh when watching changes</li>
+                                    <li><code>panini</code> : If you read previous parts of this documentation, you should already now panini. Panini is a lightweight flat file compilator and a html templating engine.</li>
+                                </ul>
+                                <h3><a id="Additional_variables_478"></a>Additional variables</h3>
+                                <p>There are two additional variables that we define at the top of the file. We will need them to continue :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-keyword">var</span> port = process.env.SERVER_PORT || <span class="hljs-number">8080</span>;
+<span class="hljs-keyword">var</span> nodepath =  <span class="hljs-string">'node_modules/'</span>;
+</code></pre>
+                                <ul>
+                                    <li><code>port</code> : used by <code>browser-sync</code> to setup and launch your development server.</li>
+                                    <li><code>nodepath</code> : a shortcut to get stuff from the <code>/node-modules</code> folder (created by npm), so we don’t expose our internal paths.</li>
+                                </ul>
+                                <h3><a id="Gulp_tasks_489"></a>Gulp tasks</h3>
+                                <p>We prepared a certain number of predefined tasks that will help you during all the development process. We will go through the <code>gulpfile.js</code> file to detail each one of this tasks.</p>
+                                <h4><a id="Server_task_492"></a>Server task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'server'</span>, [<span class="hljs-string">'build'</span>], <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+    browser.init({server: <span class="hljs-string">'./_site'</span>, port: port});
+});
+</code></pre>
+                                <p>Gulp uses this task to create a <code>browser-sync</code> instance. It creates a local developement server and automatically opens a browser window showing <code>index.html</code>.</p>
+                                <h4><a id="Watch_task_502"></a>Watch task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'watch'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.watch(<span class="hljs-string">'scss/**/*'</span>, [<span class="hljs-string">'compile-scss'</span>, browser.reload]);
+    gulp.watch(<span class="hljs-string">'sass/**/*'</span>, [<span class="hljs-string">'compile-sass'</span>, browser.reload]);
+    gulp.watch(<span class="hljs-string">'html/pages/**/*'</span>, [<span class="hljs-string">'compile-html'</span>]);
+    gulp.watch([<span class="hljs-string">'html/{layouts,includes,helpers,data}/**/*'</span>], [<span class="hljs-string">'compile-html:reset'</span>,<span class="hljs-string">'compile-html'</span>]);
+    gulp.watch([<span class="hljs-string">'./src/{layouts,partials,helpers,data}/**/*'</span>], [panini.refresh]);
+});
+</code></pre>
+                                <p>Gulp uses this task to watch any change you make to the html and Sass files. When it detects changes, it triggers other tasks that handle Sass and html compilation.</p>
+                                <h4><a id="Reset_task_516"></a>Reset task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'reset'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    rimraf(<span class="hljs-string">'bulma/*'</span>);
+    rimraf(<span class="hljs-string">'scss/*'</span>);
+    rimraf(<span class="hljs-string">'assets/css/*'</span>);
+    rimraf(<span class="hljs-string">'assets/fonts/*'</span>);
+    rimraf(<span class="hljs-string">'images/*'</span>);
+});
+</code></pre>
+                                <p>Gulp uses this task to entirely reset the project. It deletes everything from every folder. You should not need to use this but we provide it for experienced developers who know what they are doing.</p>
+                                <h4><a id="Clean_task_530"></a>Clean task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'clean'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    rimraf(<span class="hljs-string">'_site'</span>);
+});
+</code></pre>
+                                <p>Gulp uses this task to clean the <code>_site</code> folder, wich the result of the project build. At the moment you should not see any <code>_site</code> folder because you didn’t build the project yet. This task is also used at the beginnning of the build process, to clean the folder before compilign the assets again.</p>
+                                <h4><a id="Bulma_task_540"></a>Bulma task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'setupBulma'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//Get Bulma from node modules</span>
+    gulp.src([nodepath + <span class="hljs-string">'bulma/*.sass'</span>]).pipe(gulp.dest(<span class="hljs-string">'bulma/'</span>));
+    gulp.src([nodepath + <span class="hljs-string">'bulma/**/*.sass'</span>]).pipe(gulp.dest(<span class="hljs-string">'bulma/'</span>));
+});
+</code></pre>
+                                <p>gulp uses this task to copy the Bulma source file from their location in the <code>_node-modules</code> folder to the <code>bulma/</code> folder. As these assets are already copied in the project, you shouldn’t need this task right now.</p>
+                                <h4><a id="Plugins_task_552"></a>Plugins task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy-plugins'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//Slick carousel</span>
+    gulp.src([nodepath + <span class="hljs-string">'slick-carousel/slick/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/slick/'</span>));
+    <span class="hljs-comment">//Chosen</span>
+    gulp.src([nodepath + <span class="hljs-string">'chosen-js/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/chosen/'</span>));
+    <span class="hljs-comment">//Izitoast</span>
+    gulp.src([nodepath + <span class="hljs-string">'izitoast/dist/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/izitoast/'</span>));
+    <span class="hljs-comment">//Webui popover</span>
+    gulp.src([nodepath + <span class="hljs-string">'webui-popover/dist/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/webuipopover/'</span>));
+    <span class="hljs-comment">//Zoom Vanilla</span>
+    gulp.src([nodepath + <span class="hljs-string">'zoom-vanilla.js/dist/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/zoom/'</span>));
+
+    <span class="hljs-comment">//Element plugins (not concatenated in production)</span>
+    <span class="hljs-comment">//EasyAutocomplete</span>
+    gulp.src([nodepath + <span class="hljs-string">'easy-autocomplete/dist/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/easyautocomplete/'</span>));
+    gulp.src([<span class="hljs-string">'assets/data/*.json'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/easyautocomplete/data/'</span>));
+    <span class="hljs-comment">//Datepicker</span>
+    gulp.src([nodepath + <span class="hljs-string">'@fengyuanchen/datepicker/dist/**/*.js'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/datepicker/'</span>));
+    gulp.src([<span class="hljs-string">'assets/css/datepicker/datepicker.css'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/datepicker/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to copy all the required plugins into the <code>assets/js/</code> folder of the production site. You can then access those plugins from there in your web pages.</p>
+                                <h4><a id="Assets_task_579"></a>Assets task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-comment">//Copy other external css assets</span>
+    gulp.src([<span class="hljs-string">'assets/css/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/css/'</span>));
+    <span class="hljs-comment">//Copy other external js assets</span>
+    gulp.src([<span class="hljs-string">'assets/js/**/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/js/external/'</span>));
+    <span class="hljs-comment">//Copy other external font assets</span>
+    gulp.src([<span class="hljs-string">'assets/fonts/*'</span>]).pipe(gulp.dest(<span class="hljs-string">'_site/assets/fonts/'</span>));
+});
+</code></pre>
+                                <p>gulp uses this task to copy all external assets (e.g that cannot be served by npm or any package manager) into the corresponding subfolder of the <code>assets/</code> folder of the production site.</p>
+                                <h4><a id="Compile_Sass_task_594"></a>Compile Sass task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-sass'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> processors = [
+        mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: <span class="hljs-string">'.is-true-hover '</span> }),
+        autoprefixer({
+            browsers: [
+                <span class="hljs-string">"Chrome &gt;= 45"</span>,
+                <span class="hljs-string">"Firefox ESR"</span>,
+                <span class="hljs-string">"Edge &gt;= 12"</span>,
+                <span class="hljs-string">"Explorer &gt;= 10"</span>,
+                <span class="hljs-string">"iOS &gt;= 9"</span>,
+                <span class="hljs-string">"Safari &gt;= 9"</span>,
+                <span class="hljs-string">"Android &gt;= 4.4"</span>,
+                <span class="hljs-string">"Opera &gt;= 30"</span>
+            ]
+        })<span class="hljs-comment">//,</span>
+        <span class="hljs-comment">//cssnano(),</span>
+    ];
+    <span class="hljs-comment">//Watch me get Sassy</span>
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'./bulma/bulma.sass'</span>)
+        .pipe(sourcemaps.init())
+        .pipe(sass(sassOptions).on(<span class="hljs-string">'error'</span>, sass.logError))
+        .pipe(postcss(processors))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/css/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to compile the bulma source files into a single css file. it then copies this file in <code>_site/assets/css/</code>.</p>
+                                <h4><a id="Compile_Scss_task_627"></a>Compile Scss task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-scss'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">var</span> processors = [
+        mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: <span class="hljs-string">'.is-true-hover '</span> }),
+        autoprefixer({
+            browsers: [
+                <span class="hljs-string">"Chrome &gt;= 45"</span>,
+                <span class="hljs-string">"Firefox ESR"</span>,
+                <span class="hljs-string">"Edge &gt;= 12"</span>,
+                <span class="hljs-string">"Explorer &gt;= 10"</span>,
+                <span class="hljs-string">"iOS &gt;= 9"</span>,
+                <span class="hljs-string">"Safari &gt;= 9"</span>,
+                <span class="hljs-string">"Android &gt;= 4.4"</span>,
+                <span class="hljs-string">"Opera &gt;= 30"</span>
+            ]
+        })<span class="hljs-comment">//,</span>
+        <span class="hljs-comment">//cssnano(),</span>
+    ];
+    <span class="hljs-comment">//Watch me get Sassy</span>
+    <span class="hljs-keyword">return</span> gulp.src(<span class="hljs-string">'./scss/*.scss'</span>)
+        .pipe(sourcemaps.init())
+        .pipe(sass(sassOptions).on(<span class="hljs-string">'error'</span>, sass.logError))
+        .pipe(postcss(processors))
+        .pipe(sourcemaps.write())
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/css/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to compile the Nephos Scss source files into a single css file (<code>core.css</code>). it then copies this file in <code>_site/assets/css/</code>.</p>
+                                <h4><a id="Compile_Html_task_660"></a>Compile Html task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-html'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.src(<span class="hljs-string">'html/pages/**/*.html'</span>)
+        .pipe(panini({
+        root: <span class="hljs-string">'html/pages/'</span>,
+        layouts: <span class="hljs-string">'html/layouts/'</span>,
+        partials: <span class="hljs-string">'html/includes/'</span>,
+        helpers: <span class="hljs-string">'html/helpers/'</span>,
+        data: <span class="hljs-string">'html/data/'</span>
+    }))
+        .pipe(gulp.dest(<span class="hljs-string">'_site'</span>))
+        .on(<span class="hljs-string">'finish'</span>, browser.reload);
+});
+
+gulp.task(<span class="hljs-string">'compile-html:reset'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">done</span>) </span>{
+    panini.refresh();
+    done();
+});
+</code></pre>
+                                <p>Gulp uses this task to compile all the changes you make to the template html files. It the triggers a refresh from Panini to update your templates before rendering.</p>
+                                <h4><a id="Compile_js_task_684"></a>Compile js task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'compile-js'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">return</span> gulp.src([ 
+        nodepath + <span class="hljs-string">'jquery/dist/jquery.min.js'</span>, 
+        nodepath + <span class="hljs-string">'feather-icons/dist/feather.min.js'</span>,
+        nodepath + <span class="hljs-string">'typed.js/lib/typed.min.js'</span>,
+        nodepath + <span class="hljs-string">'scrollreveal/dist/scrollreveal.min.js'</span>,
+        nodepath + <span class="hljs-string">'ocanvas/build/dist/latest/ocanvas.min.js'</span>,
+        nodepath + <span class="hljs-string">'slick-carousel/slick/slick.min.js'</span>, 
+        nodepath + <span class="hljs-string">'chosen-js/chosen.jquery.min.js'</span>,
+        nodepath + <span class="hljs-string">'izitoast/dist/js/iziToast.min.js'</span>,
+        nodepath + <span class="hljs-string">'webui-popover/dist/jquery.webui-popover.min.js'</span>,
+        nodepath + <span class="hljs-string">'zoom-vanilla.js/dist/zoom-vanilla.min.js'</span>,
+    ])
+        .pipe(concat(<span class="hljs-string">'app.js'</span>))
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/js/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to compile all the plugins javascript into a single concatenated file residing in <code>_site/assets/js/app.js</code>, for better performance.</p>
+                                <h4><a id="Copy_js_task_707"></a>Copy js task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy-js'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.src(<span class="hljs-string">'js/**/*.js'</span>)
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/js/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to copy Nephos specific js files in  <code>_site/assets/js/</code>.</p>
+                                <h4><a id="Copy_images_task_718"></a>Copy images task</h4>
+                                <pre class="prettyprint"><code class="language-js">gulp.task(<span class="hljs-string">'copy-images'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    gulp.src(<span class="hljs-string">'images/**/*'</span>)
+        .pipe(gulp.dest(<span class="hljs-string">'./_site/assets/images/'</span>));
+});
+</code></pre>
+                                <p>Gulp uses this task to copy all your images to the production site, into the <code>_site/assets/images/</code> folder.</p>
+                                <h3><a id="Gulp_commands_729"></a>Gulp commands</h3>
+                                <p>Now that we have seen that we have a lot of ready to use tasks for gulp. While you can run some of the above tasks individually, let’s now see the available commands that make use of multiple tasks at once.</p>
+                                <h3><a id="gulp_init_732"></a>gulp init</h3>
+                                <p>You will need this command in only one case : if you want to reset the bulma source files to their original state. Use with caution, only if you know what you are doing. All previous changes made to these source files will be discarded. Run it by typing this command in your terminal window, at the root of the project :</p>
+                                <p><code>gulp init</code></p>
+                                <h3><a id="gulp_build_737"></a>gulp build</h3>
+                                <p>Builds the project. One of the two essential commands of <strong>nephos-gulp</strong>. It runs several tasks that we defined above. Run it by typing this command in your terminal window, at the root of the project :</p>
+                                <p><code>gulp build</code></p>
+                                <p>Here is what happens when you run <code>gulp build</code> :</p>
+                                <ul>
+                                    <li>Gulp deletes the <code>_site</code> folder</li>
+                                    <li>Then, gulp executes all assets copying and compilation tasks (<code>copy</code>, <code>copy-plugins</code>, <code>compile-js</code>, <code>copy-js</code>, <code>compile-sass</code>, <code>compile-scss</code>, <code>compile-html</code> and  <code>copy-images</code>)</li>
+                                </ul>
+                                <h4><a id="gulp_default_747"></a>gulp default</h4>
+                                <p>Starts the gulp watcher and a browser instance with auto refresh. This is the command you will be using when you will want to start developping. Run it by typing this command in your terminal window, at the root of the project :</p>
+                                <p><code>gulp default</code></p>
+                                <p>Hit <strong>Ctrl + c</strong> in  your terminal window to interrupt the watcher.</p>
+                                <h3><a id="Setup_Nephos_755"></a>Setup Nephos</h3>
+                                <p>You should now have a baisc understanding of what <strong>Gulp</strong> and <strong>Panini</strong> are doing. You are now ready to setup the project to start developing. We’ve been talking about gulp and panini for ages but you’ll quickly see how fast it is to setup your project. In your terminal window, change directory to the root of the <strong>nephos-gulp</strong> folder :</p>
+                                <p><code>cd path/to/nephos-gulp/</code></p>
+                                <p>Then start  by building the project. Run the following command :</p>
+                                <p><code>gulp build</code></p>
+                                <p>Finally start the gulp watcher. Run the following command. It will build the <code>_site</code> folder with all relevant assets inside it :</p>
+                                <p><code>gulp default</code></p>
+                                <p>When the task starts, you should be redirected to your browser showing the <code>index.html</code> page. That’s it, your project is now running. Every change you make to the html or scss files will trigger a code compilation and a browser refresh. Really easy isn’t it ?</p>
+                                <h2><a id="Nephos_plugins_772"></a>Nephos plugins</h2>
+                                <p>Nephos is bundled with some javascript plugins to enhance the template features. If you want more details about plugin usage and initialization, please head to the <a href="#">js reference section</a>. Here is a list of the plugins used by Nephos.</p>
+                                <ul>
+                                    <li><strong>Card.js</strong></li>
+                                </ul>
+                                <p>A plugin that enhances the user checkout experience by mocking a credit card. Read the plugin <a href="https://github.com/jessepollak/card" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>Chosen.js</strong></li>
+                                </ul>
+                                <p>A plugin that transforms html5 native selects into beautiful javascript powered components. Read the plugin <a href="https://harvesthq.github.io/chosen/" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>feather.js</strong></li>
+                                </ul>
+                                <p>A plugin that implements a full features svg icon library and gives you great control over them. Read the plugin <a href="https://github.com/feathericons/feather#feather" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>iziToast.js</strong></li>
+                                </ul>
+                                <p>A plugin that implements a very flexible set of toast notifications. Read the plugin <a href="http://izitoast.marcelodolce.com/" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>slick.js</strong></li>
+                                </ul>
+                                <p>An already world famous carousel plugin. Read the plugin <a href="http://kenwheeler.github.io/slick/" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>webuipopover.js</strong></li>
+                                </ul>
+                                <p>A plugin that offers fully customizable popovers. Read the plugin <a href="https://github.com/sandywalker/webui-popover" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>zoom.js</strong></li>
+                                </ul>
+                                <p>A simple jQuery plugin for image zooming, as seen on Medium. Read the plugin <a href="https://github.com/fat/zoom.js/" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>datepicker.js</strong></li>
+                                </ul>
+                                <p>A simple jQuery datepicker plugin, with basic options. Read the plugin <a href="https://fengyuanchen.github.io/datepicker/" target="_blank">documentation</a> for more details about usage.</p>
+                                <ul>
+                                    <li><strong>easy-autocomplete</strong></li>
+                                </ul>
+                                <p>A powerful autocomplete plugin with many features. Read the plugin <a href="http://easyautocomplete.com/" target="_blank">documentation</a> for more details about usage.</p>
+                            </div>
+
+                            <div class="section-txt" id="theming">
+                                <h2><a id="Theming_811"></a>Theming</h2>
+                                <p>Nephos is built following a CSS modular approach. We’ve made it easy for you to customize theme colors. In this section, we are going to setup a theme from scratch to help you get started.</p>
+                                <h3><a id="Creating_a_Theme_814"></a>Creating a Theme</h3>
+                                <p>Let’s start from the same example that we buil above. Let’s say that the <code>Nephos-gulp/scss/partials/_theme-default.scss</code> that Nephos uses doesn’t fit your needs and that you want to customize it. Let’s start from scratch to make you understand how you can create a new theme in a few minutes.</p>
+                                <h4><a id="Add_a_new_Theme_817"></a>Add a new Theme</h4>
+                                <p>!&gt; If your <strong>Gulp tasks</strong> are still running in your terminal, we recommend you to stop them (<code>Ctrl + C</code>) before creating a new theme.</p>
+                                <p>Create a new file in <code>Nephos-gulp/scss/partials/</code>. For the sake of the example, we will name this file <code>_theme-example.scss</code> . Notice the underscore at the start of the file name. Don’t forget it or your project will break.</p>
+                                <h4><a id="Theme_colors_823"></a>Theme colors</h4>
+                                <p>Nephos uses 3 color variables and a set of box shadows that you can customize to control global colors accross the template. There are 3 main variables :</p>
+                                <ul>
+                                    <li><strong>Primary</strong> color</li>
+                                    <li><strong>Secondary</strong> color</li>
+                                    <li><strong>Accent</strong> color</li>
+                                </ul>
+                                <p>Our new example theme will use primary red (<code>#f95c64</code>), secondary blue (<code>#325bff</code>) and accent purple (<code>#dc2dff</code>) as the main colors (these colors are just a random example, do not use in production and pick your own colors instead). Lets create those new variables. Add this to your <code>scss/partials/_theme-example.scss</code> file :</p>
+                                <pre class="prettyprint"><code class="language-scss"><span class="hljs-comment">/*! _theme-example.scss | My Project | My Name */</span>
+
+<span class="hljs-comment">/* ==========================================================================
+Example theme variables 
+========================================================================== */</span>
+
+<span class="hljs-variable">$primary</span><span class="hljs-value">: <span class="hljs-hexcolor">#f95c64</span>;</span>
+<span class="hljs-variable">$secondary</span><span class="hljs-value">: <span class="hljs-hexcolor">#325bff</span>;</span>
+<span class="hljs-variable">$accent</span><span class="hljs-value">: <span class="hljs-hexcolor">#dc2dff</span>;</span>
+</code></pre>
+                                <p>Every Nephos component and layout element rely on these variables. Changing them will immediatly impact all colors in your project.</p>
+                                <h4><a id="Theme_shadows_846"></a>Theme shadows</h4>
+                                <p>Some Nephos elements, like buttons, have colored box shadows. Box shadows inherit their colors from the 3 previsously defined color variables. Before defining the theme’s box shadows, we need to convert our main hex variables to the rgba format. There are many tools to do that quickly and for free, just search on Google. Here are our converted values:</p>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Variable</th>
+                                            <th style="text-align:center">Hex</th>
+                                            <th style="text-align:center">Rgb</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>$primary</td>
+                                            <td style="text-align:center">#f95c64</td>
+                                            <td style="text-align:center">rgb(249, 92, 100)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$secondary</td>
+                                            <td style="text-align:center">#325bff</td>
+                                            <td style="text-align:center">rgb(50, 91, 255)</td>
+                                        </tr>
+                                        <tr>
+                                            <td>$accent</td>
+                                            <td style="text-align:center">#dc2dff</td>
+                                            <td style="text-align:center">rgb(220, 45, 255)</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>Now that we have our converted values, we can setup box shadows using the rgba format, wich adds the alpha channel for transparency :</p>
+                                <pre class="prettyprint"><code class="language-scss"><span class="hljs-comment">//Base shadow</span>
+<span class="hljs-variable">$base-shadow</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0.12</span>)
+
+//Primary box shadow
+<span class="hljs-variable">$primary-shadow-from</span>: <span class="hljs-function">rgba</span>(<span class="hljs-number">249</span>, <span class="hljs-number">92</span>, <span class="hljs-number">100</span>, <span class="hljs-number">0.42</span>);</span>
+<span class="hljs-variable">$primary-shadow-to</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">249</span>, <span class="hljs-number">92</span>, <span class="hljs-number">100</span>, <span class="hljs-number">0.2</span>);</span>
+<span class="hljs-variable">$primary-box-shadow</span><span class="hljs-value">:  <span class="hljs-number">0</span> <span class="hljs-number">14px</span> <span class="hljs-number">26px</span> -<span class="hljs-number">12px</span> <span class="hljs-variable">$primary-shadow-from</span>, <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">23px</span> <span class="hljs-number">0px</span> <span class="hljs-variable">$base-shadow</span>, <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-variable">$primary-shadow-to</span> <span class="hljs-important">!important</span>;</span>
+
+<span class="hljs-comment">//Secondary box shadow</span>
+<span class="hljs-variable">$secondary-shadow-from</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">50</span>, <span class="hljs-number">91</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.42</span>);</span>
+<span class="hljs-variable">$secondary-shadow-to</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">50</span>, <span class="hljs-number">91</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);</span>
+<span class="hljs-variable">$secondary-box-shadow</span><span class="hljs-value">:  <span class="hljs-number">0</span> <span class="hljs-number">14px</span> <span class="hljs-number">26px</span> -<span class="hljs-number">12px</span> <span class="hljs-variable">$secondary-shadow-from</span>, <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">23px</span> <span class="hljs-number">0px</span> <span class="hljs-variable">$base-shadow</span>, <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-variable">$secondary-shadow-to</span> <span class="hljs-important">!important</span>;</span>
+
+<span class="hljs-comment">//Accent box shadow</span>
+<span class="hljs-variable">$accent-shadow-from</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">220</span>, <span class="hljs-number">45</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.42</span>);</span>
+<span class="hljs-variable">$accent-shadow-to</span><span class="hljs-value">: <span class="hljs-function">rgba</span>(<span class="hljs-number">220</span>, <span class="hljs-number">45</span>, <span class="hljs-number">255</span>, <span class="hljs-number">0.2</span>);</span>
+<span class="hljs-variable">$accent-box-shadow</span><span class="hljs-value">:  <span class="hljs-number">0</span> <span class="hljs-number">14px</span> <span class="hljs-number">26px</span> -<span class="hljs-number">12px</span> <span class="hljs-variable">$accent-shadow-from</span>, <span class="hljs-number">0</span> <span class="hljs-number">4px</span> <span class="hljs-number">23px</span> <span class="hljs-number">0px</span> <span class="hljs-variable">$base-shadow</span>, <span class="hljs-number">0</span> <span class="hljs-number">8px</span> <span class="hljs-number">10px</span> -<span class="hljs-number">5px</span> <span class="hljs-variable">$accent-shadow-to</span> <span class="hljs-important">!important</span>;</span> 
+</code></pre>
+                                <h3><a id="Activating_a_Theme_878"></a>Activating a Theme</h3>
+                                <p>You’re almost ready to start using your new theme but first, we need to wire it to the core scss file. You can create a new core file or edit the exitsing one. in this example, we wil first edit the existing <code>core.scss</code> file that lives in the <code>Nephos-gulp/scss/</code> folder.</p>
+                                <p>Open  <code>core.scss</code> with your favorite text editor and edit the theme import original statement</p>
+                                <pre class="prettyprint"><code class="language-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/theme-default'</span>;</span>
+</code></pre>
+                                <p>Change it to</p>
+                                <pre class="prettyprint"><code class="language-scss"><span class="hljs-at_rule">@<span class="hljs-keyword">import</span> <span class="hljs-string">'partials/theme-example'</span>;</span>
+</code></pre>
+                                <p>Now in your terminal, in the root of your project, start <strong>Gulp</strong> with the following command :</p>
+                                <pre class="prettyprint">gulp default</pre>
+                                <p>Congratulations, your template is setup with a brand new theme you just created. You are now ready to start customizing. Now that you have a global understanding of how Nephos works, you can use the CSS and Js reference sections of this documentation to get a grasp on Nephos classes, classes modifiers and javascript options.</p>
+                            </div>
+
+                            <div class="section-txt" id="css-ref">
+                                <h2><a id="CSS_Reference_899"></a>CSS Reference</h2>
+                                <p>This is the css reference section. You will find here the most important classes, related modifiers and hints about styles distribution.</p>
+                                <h3><a id="Styles_distribution_902"></a>Styles distribution</h3>
+                                <p>As you already noticed, there are several SCSS partial files. Each one handles a different part of the template styles. We will go through these files to learn more about the styles they hold. This way, you will be able to find faster the chunks of code you wish to edit.</p>
+                                <p><strong>_account.scss</strong></p>
+                                <ul>
+                                    <li>Account pages layout elements (page header, titles, spacing, tabbed menu …) (<code>account.html</code>, <code>account-edit.html</code>, <code>wishlist.html</code>)</li>
+                                    <li>User profile styles</li>
+                                    <li>Wishlist styles</li>
+                                    <li>Edit profile page styles</li>
+                                    <li>Avatar uploader styles</li>
+                                </ul>
+                                <p><strong>_auth.scss</strong></p>
+                                <ul>
+                                    <li>Holds all the specific styles related to the login / register page (<code>authentication.html</code>)</li>
+                                </ul>
+                                <p><strong>_buttons.scss</strong></p>
+                                <ul>
+                                    <li>Holds all button styles</li>
+                                </ul>
+                                <p><strong>_cards.scss</strong></p>
+                                <ul>
+                                    <li>Sets the basic card styles</li>
+                                    <li>Holds styles for the products grid layout (<code>products.html</code>), with short and long cards</li>
+                                    <li>Holds styles for the products list layout (<code>products-list.html</code>)</li>
+                                </ul>
+                                <p><strong>_categories.scss</strong></p>
+                                <ul>
+                                    <li>Holds the styles for the shop categories tiles (<code>shop.html</code>)</li>
+                                    <li>Holds the styles for the category header and the sorting select box of (<code>products.html</code> and <code>products-list.html</code>)</li>
+                                </ul>
+                                <p><strong>_checkboxes.scss</strong></p>
+                                <ul>
+                                    <li>Defines the styles for checkbox elements</li>
+                                </ul>
+                                <p><strong>_checkout.scss</strong></p>
+                                <ul>
+                                    <li>Holds the checkout process steps specific styles (<code>checkout-setp1.html</code>,<code>checkout-step2.html</code>,<code>checkout-step3.html</code>,<code>checkout-step4.html</code>,<code>checkout-step5.html</code>)</li>
+                                </ul>
+                                <p><strong>_colors.scss</strong></p>
+                                <ul>
+                                    <li>Defines global color variables that are used globally accross the template</li>
+                                </ul>
+                                <p><strong>_filters.scss</strong></p>
+                                <ul>
+                                    <li>Defines styles for the price range input filter in the filters sidebar of <code>products.html</code> and <code>products-list.html</code></li>
+                                    <li>Adjusts filters checkboxes spacing</li>
+                                </ul>
+                                <p><strong>_forms.scss</strong></p>
+                                <ul>
+                                    <li>Holds styles for textareas</li>
+                                    <li>Holds styles for inputs</li>
+                                    <li>Holds styles for controls and input wrappers</li>
+                                </ul>
+                                <p><strong>_invoice.html</strong></p>
+                                <ul>
+                                    <li>Holds the <code>invoice.html</code> page specific styles</li>
+                                </ul>
+                                <p><strong>_layout.scss</strong></p>
+                                <ul>
+                                    <li>Defines base styles for the document <code>body</code></li>
+                                    <li>Holds the homepage fullscreen slider styles</li>
+                                    <li>Defines styles for the main content wrapper</li>
+                                </ul>
+                                <p><strong>_orders.scss</strong></p>
+                                <ul>
+                                    <li>Holds styles for the order tracking pages (<code>orders.html</code> and <code>orders-list.html</code>)</li>
+                                </ul>
+                                <p><strong>_pageloader.scss</strong></p>
+                                <ul>
+                                    <li>Holds the styles for the page preloader</li>
+                                </ul>
+                                <p><strong>_product.scss</strong></p>
+                                <ul>
+                                    <li>Holds the styles for the single product pages (<code>products.html</code> and <code>products-list.html</code>)</li>
+                                </ul>
+                                <p><strong>_quickview.scss</strong></p>
+                                <ul>
+                                    <li>Holds the styles for all template sidebars (shop dark sidebar, cart sidebar, categories sidebar, filters sidebar …)</li>
+                                </ul>
+                                <p><strong>_responsive.scss</strong></p>
+                                <ul>
+                                    <li>Holds all the template media queries</li>
+                                    <li>Tablet landscape media queries</li>
+                                    <li>Tablet portrait media queries</li>
+                                    <li>Mobile media queries</li>
+                                </ul>
+                                <p><strong>_search.scss</strong></p>
+                                <ul>
+                                    <li>Holds the styles for the search input and it’s overlay</li>
+                                </ul>
+                                <p><strong>_sidebar.scss</strong></p>
+                                <ul>
+                                    <li>Holds the styles of the main template sidebar</li>
+                                </ul>
+                                <p><strong>_utils.scss</strong></p>
+                                <ul>
+                                    <li>A set of CSS utilities and helpers</li>
+                                    <li>Holds styles for the action bar</li>
+                                    <li>Holds styles for the mobile navbar</li>
+                                    <li>Holds styles for popovers</li>
+                                    <li>Defines basic keyframes animation that are reused accross the template</li>
+                                </ul>
+                                <h3><a id="Layout_1005"></a>Layout</h3>
+                                <h4><a id="Grid_system_1007"></a>Grid system</h4>
+                                <h5><a id="Columns_1009"></a>Columns</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.columns</code></td>
+                                            <td><code>is-vcentered</code></td>
+                                            <td>Centers nested <code>column</code> elements verticaly using flexbox</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-multiline</code></td>
+                                            <td>Makes the nested columns wrap into a new row when the end of the current row is reached</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-mobile</code></td>
+                                            <td>Prevents columns from stacking on mobile devices</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-gapless</code></td>
+                                            <td>Removes padding from children columns</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h5><a id="Column_1018"></a>Column</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.column</code></td>
+                                            <td><code>is-half</code></td>
+                                            <td>Makes the column take half of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-one-third</code></td>
+                                            <td>Makes the column take 1/3 of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-two-thirds</code></td>
+                                            <td>Makes the column take 2/3 of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-one-quarter</code></td>
+                                            <td>Makes the column take 1/4 of the available space</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-*1-12</code></td>
+                                            <td>Makes the column take a ammount of space corresponding to the specified number between 1 and 12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4><a id="Responsive_helpers_1028"></a>Responsive helpers</h4>
+                                <h5><a id="Display_helpers_1030"></a>Display helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.*</code></td>
+                                            <td><code>is-flex-mobile</code></td>
+                                            <td>Sets display to flex for the target element when device width is &lt; 768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-tablet-only</code></td>
+                                            <td>Sets display to flex for the target element when device width is between 769px and 1023px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-desktop-only</code></td>
+                                            <td>Sets display to flex for the target element when device width is between 1024px and 1215px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-widescreen-only</code></td>
+                                            <td>Sets display to flex for the target element when device width is between 1216px and 1407px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-touch</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt; 1408px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-tablet</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt; 768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-desktop</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt; 1024px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-widescreen</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt; 1216px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-flex-fullhd</code></td>
+                                            <td>Sets display to flex for the target element when device width is &gt; 1216px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <p>You can replace the keyword <code>flex</code> with the following parameters</p>
+                                <ul>
+                                    <li><code>block</code></li>
+                                    <li><code>inline</code></li>
+                                    <li><code>inline-block</code></li>
+                                    <li><code>inline-flex</code></li>
+                                </ul>
+                                <h5><a id="Hide_helpers_1051"></a>Hide helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.*</code></td>
+                                            <td><code>is-hidden-mobile</code></td>
+                                            <td>Hides the target element when device width is &lt; 768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-tablet-only</code></td>
+                                            <td>Hides the target element when device width is between 769px and 1023px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-desktop-only</code></td>
+                                            <td>Hides the target element when device width is between 1024px and 1215px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-widescreen-only</code></td>
+                                            <td>Hides the target element when device width is between 1216px and 1407px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-touch</code></td>
+                                            <td>Hides the target element when device width is &gt; 1408px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-tablet</code></td>
+                                            <td>Hides the target element when device width is &gt; 768px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-desktop</code></td>
+                                            <td>Hides the target element when device width is &gt; 1024px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-widescreen</code></td>
+                                            <td>Hides the target element when device width is &gt; 1216px</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-hidden-fullhd</code></td>
+                                            <td>Hides the target element when device width is &gt; 1216px</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4><a id="General_helpers_1065"></a>General helpers</h4>
+                                <h5><a id="Heading_helpers_1067"></a>Heading helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.title</code></td>
+                                            <td><code>is-*1-6</code></td>
+                                            <td>Sets the title size on a scale of 1 to 6</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>.subtitle</code></td>
+                                            <td><code>is-*1-6</code></td>
+                                            <td>Sets the subtitle size on a scale of 1 to 6</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h5><a id="States_helpers_1074"></a>States helpers</h5>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>*</code></td>
+                                            <td><code>is-hidden</code></td>
+                                            <td>Sets the target element to<code>display: none</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-vhidden</code></td>
+                                            <td>Sets the target element to<code>visibility: hidden</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-disabled</code></td>
+                                            <td>Disables pointer events on target element</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h3><a id="Components_1082"></a>Components</h3>
+                                <h4><a id="Buttons_1084"></a>Buttons</h4>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main Class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.button</code></td>
+                                            <td><code>big-button</code></td>
+                                            <td>Transforms a normal button into a big cta button. Can have additional classes like <code>is-bold</code> and <code>is-outlined</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>raised</code></td>
+                                            <td>Raises the button when hovered</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>upper-button</code></td>
+                                            <td>Sets the button text to uppercase</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>rounded</code></td>
+                                            <td>Gives rounded corners to a button element</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-loading</code></td>
+                                            <td>Gives a loading state to a button element</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>feather-button</code></td>
+                                            <td>Transforms a normal button into a bigger uppercase button. Can have additional classes like <code>is-small</code>, to lower its size, and <code>is-bold</code> to make it bolder.</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>primary-button</code></td>
+                                            <td>Changes the button background color to <code>$primary</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>secondary-button</code></td>
+                                            <td>Changes the button background color to <code>$secondary</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>accent-button</code></td>
+                                            <td>Changes the button background color to <code>$accent</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>grey-button</code></td>
+                                            <td>Changes the button background color to <code>$accent-grey</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <h4><a id="Cards_1100"></a>Cards</h4>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Main Class</th>
+                                            <th>Modifier</th>
+                                            <th>Effects</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>.flat-card</code></td>
+                                            <td><code>is-auto</code></td>
+                                            <td>Flat cards have a fixed height by default. This modifier removes fixed height and changes its value to auto</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-long</code></td>
+                                            <td>Adjusts the card layout for long product cards</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><code>is-list-item</code></td>
+                                            <td>Transforms a list item into a flat card.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="section-txt" id="js-ref">
+                                <h2><a id="Js_reference_1109"></a>Js reference</h2>
+                                <p>This is the javascript reference section. You will find here what you need to know to get started with the theme’s js. All the following code snippets can be found in the <code>/assets/js/nephos.js</code> file.</p>
+                                <h3><a id="Pageloader_1112"></a>Pageloader</h3>
+                                <p>If you wish to change the behaviour of the pageloader component, you’ll have to edit this snippet:</p>
+                                <pre class="prettyprint"><code class="language-js">$(<span class="hljs-built_in">document</span>).ready(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+
+    <span class="hljs-comment">//Page loader</span>
+    <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.pageloader'</span>).length) {
+
+        $(<span class="hljs-string">'.pageloader'</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+
+        $(<span class="hljs-built_in">window</span>).on(<span class="hljs-string">'load'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> pageloaderTimeout = setTimeout( <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+            $(<span class="hljs-string">'.pageloader'</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+            $(<span class="hljs-string">'.infraloader'</span>).toggleClass(<span class="hljs-string">'is-active'</span>)
+            clearTimeout( pageloaderTimeout );
+        }, <span class="hljs-number">700</span> );
+        })
+    }
+});
+</code></pre>
+                                <h3><a id="Responsive_toggle_1134"></a>Responsive toggle</h3>
+                                <p>If you want to change the way the responsive menu toggle behaves, you’ll have to edit this snippet:</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Mobile menu toggle</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.navbar-burger'</span>).length) {
+    $(<span class="hljs-string">'.navbar-burger'</span>).on(<span class="hljs-string">"click"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-keyword">this</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+        <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.navbar-menu'</span>).hasClass(<span class="hljs-string">'is-active'</span>)) {
+            $(<span class="hljs-string">'.navbar-menu'</span>).removeClass(<span class="hljs-string">'is-active'</span>);
+        } <span class="hljs-keyword">else</span> {
+            $(<span class="hljs-string">'.navbar-menu'</span>).addClass(<span class="hljs-string">'is-active'</span>);
+        }
+    });
+}
+</code></pre>
+                                <h3><a id="Feather_icons_1152"></a>Feather icons</h3>
+                                <p>A single line is needed to initialize feather icons :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Initialize Feather Icons</span>
+feather.replace();
+</code></pre>
+                                <p>Use the following pattern to insert your icons</p>
+                                <pre class="prettyprint"><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">data-feather</span>=<span class="hljs-value">"*"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span> 
+</code></pre>
+                                <p>Where <code>*</code> stands for the icon name. A list of all available icons can be found &lt;a href=&quot;<a href="https://feathericons.com/">https://feathericons.com/</a>&quot; target=&quot;_blank&quot;&gt;Here&lt;/a&gt;.</p>
+                                <h3><a id="Background_images_1168"></a>Background images</h3>
+                                <p>You can set a background image on any element by using <code>data-attributes</code>. Here is the snippet that handles this :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Attribute background images</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.has-background-image'</span>).length) {
+    $(<span class="hljs-string">".has-background-image"</span>).each(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> bgImage = $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">'data-background'</span>);
+        <span class="hljs-keyword">if</span> (bgImage !== <span class="hljs-literal">undefined</span>) {
+            $(<span class="hljs-keyword">this</span>).css(<span class="hljs-string">'background-image'</span>, <span class="hljs-string">'url('</span> + bgImage + <span class="hljs-string">')'</span>);
+        } 
+    }
+)}
+</code></pre>
+                                <p>Use the following pattern to set your backgrounds</p>
+                                <pre class="prettyprint"><code class="language-html"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"some-div"</span> <span class="hljs-attribute">data-background</span>=<span class="hljs-value">"path/to/your/image.jpeg"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span> 
+</code></pre>
+                                <h3><a id="iziToasts_1189"></a>iziToasts</h3>
+                                <p>This is how you can create an iziToast object:</p>
+                                <pre class="prettyprint"><code class="language-js">iziToast.show({
+    class: 'success-toast',
+    icon: 'fa fa-heart-o',
+    title: 'Successfuly removed from Wishlist',
+    message: '',
+    titleColor: '#fff',
+    messageColor: '#fff',
+    iconColor: "#fff",
+    backgroundColor: '#FF7273',
+    progressBarColor: '#444F60',
+    position: 'bottomRight',
+    transitionIn: 'fadeInUp',
+    close: false,
+    timeout: 2000,
+    zindex: 99999,
+}); 
+</code></pre>
+                                <p>You can easily use it in your callbacks, when needed. Check the plugin’s documentation for more full documented examples.</p>
+                                <h3><a id="chosen_js_1213"></a>chosen js</h3>
+                                <p>Create javascript select boxes easily :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Chosen select init</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.chosen-select'</span>).length) {
+    $(<span class="hljs-string">".chosen-select"</span>).chosen({
+        disable_search_threshold: <span class="hljs-number">6</span>,
+        width: <span class="hljs-string">'100%'</span>
+    });
+}
+</code></pre>
+                                <p>Then give the <code>chosen-select</code> class to a native <code>select</code> element and watch the magic.</p>
+                                <h3><a id="webui_popovers_1228"></a>webui popovers</h3>
+                                <p>Create new popovers by creating a new option object and linking it to a css class:</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Popovers</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.has-popover-top'</span>).length) {
+    $(<span class="hljs-string">'.has-popover-top'</span>).webuiPopover({
+        trigger:<span class="hljs-string">'hover'</span>,
+        placement: <span class="hljs-string">'top'</span>,
+        width: <span class="hljs-number">280</span>,
+        animation: <span class="hljs-string">'pop'</span>
+    }); 
+}
+</code></pre>
+                                <p>Read the plugin documentation to see all available options.</p>
+                                <h3><a id="Easy_Autocomplete_1245"></a>Easy Autocomplete</h3>
+                                <p>Create autompletes easily following the plugin documentation. Here is an advanced example using templating :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Users autocomplete</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'#users-autocpl'</span>).length) {
+    <span class="hljs-keyword">var</span> usersOptions = {
+        url: <span class="hljs-string">"assets/js/easyAutocomplete/data/persons.json"</span>,
+        getValue: <span class="hljs-string">"name"</span>,
+        template: {
+            type: <span class="hljs-string">"custom"</span>,
+            method: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">value, item</span>) </span>{
+                <span class="hljs-keyword">return</span> <span class="hljs-string">"&lt;div class="</span> + <span class="hljs-string">'template-wrapper'</span> + <span class="hljs-string">"&gt;&lt;img class="</span> + <span class="hljs-string">'autocpl-avatar'</span> + <span class="hljs-string">" src='"</span> + item.pic + <span class="hljs-string">"' /&gt;&lt;div class="</span> + <span class="hljs-string">'entry-text'</span> + <span class="hljs-string">"&gt;"</span> + value + <span class="hljs-string">"&lt;br&gt;&lt;span&gt;"</span> + item.email + <span class="hljs-string">"&lt;/span&gt;&lt;/div&gt;&lt;/div&gt; "</span>;
+            }
+        },
+        highlightPhrase: <span class="hljs-literal">false</span>,
+        list: {
+            maxNumberOfElements: <span class="hljs-number">3</span>,
+            showAnimation: {
+                type: <span class="hljs-string">"fade"</span>, <span class="hljs-comment">//normal|slide|fade</span>
+                time: <span class="hljs-number">400</span>,
+                callback: <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{}
+            },
+            match: {
+                enabled: <span class="hljs-literal">true</span>
+            }
+        },
+    };
+
+    $(<span class="hljs-string">"#users-autocpl"</span>).easyAutocomplete(usersOptions);
+}
+</code></pre>
+                                <p>The demo data is fecthed from a <code>json</code> file in the <code>data</code> directory of the <code>assets/data/</code> folder. It is then copied to the plugin folder on the production site.</p>
+                                <h3><a id="Mobile_Mode_1281"></a>Mobile Mode</h3>
+                                <p>Nephos also uses powerful javascript media queries to check the screen width on load <strong>and</strong> on resize. Those media queries come in two flavours, one for the normal pages and the other one for the checkout pages, wich display a step progress bar. If you want to make some changes in this behaviour, here is the code that controls it :</p>
+                                <pre class="prettyprint"><code class="language-js"><span class="hljs-comment">//Mobile mode</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'#mobile-mode, #sidebar-mode'</span>).length) {
+
+    <span class="hljs-comment">//mobile mode</span>
+    $(<span class="hljs-string">'#mobile-mode, #sidebar-mode'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        $(<span class="hljs-string">'.icon-menu li a.is-active'</span>).removeClass(<span class="hljs-string">'is-active'</span>);
+        $(<span class="hljs-string">'.mobile-navbar'</span>).toggleClass(<span class="hljs-string">'is-active'</span>);
+        $(<span class="hljs-string">'.shop-wrapper'</span>).toggleClass(<span class="hljs-string">'is-mobile-mode'</span>);
+        $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).toggleClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+        $(<span class="hljs-string">'.pageloader, .infraloader'</span>).toggleClass(<span class="hljs-string">'is-full'</span>);
+    })
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.matchMedia(<span class="hljs-string">'(max-width: 768px)'</span>).matches) {
+        $(<span class="hljs-string">'.mobile-navbar'</span>).addClass(<span class="hljs-string">'is-active'</span>);
+        $(<span class="hljs-string">'.shop-wrapper'</span>).addClass(<span class="hljs-string">'is-mobile-mode'</span>);
+        $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).addClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+        $(<span class="hljs-string">'.pageloader, .infraloader'</span>).addClass(<span class="hljs-string">'is-full'</span>);
+    } <span class="hljs-keyword">else</span> {
+        $(<span class="hljs-string">'.mobile-navbar'</span>).removeClass(<span class="hljs-string">'is-active'</span>);
+        $(<span class="hljs-string">'.shop-wrapper'</span>).removeClass(<span class="hljs-string">'is-mobile-mode'</span>);
+        $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).removeClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+        $(<span class="hljs-string">'.pageloader, .infraloader'</span>).removeClass(<span class="hljs-string">'is-full'</span>);
+    }
+
+    <span class="hljs-comment">//resize handler</span>
+    $(<span class="hljs-built_in">window</span>).on(<span class="hljs-string">'resize'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.matchMedia(<span class="hljs-string">'(max-width: 768px)'</span>).matches) {
+            $(<span class="hljs-string">'.mobile-navbar'</span>).addClass(<span class="hljs-string">'is-active'</span>);
+            $(<span class="hljs-string">'.shop-wrapper'</span>).addClass(<span class="hljs-string">'is-mobile-mode'</span>);
+            $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).addClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+            $(<span class="hljs-string">'.pageloader, .infraloader'</span>).addClass(<span class="hljs-string">'is-full'</span>);
+        } <span class="hljs-keyword">else</span> {
+            $(<span class="hljs-string">'.mobile-navbar'</span>).removeClass(<span class="hljs-string">'is-active'</span>);
+            $(<span class="hljs-string">'.shop-wrapper'</span>).removeClass(<span class="hljs-string">'is-mobile-mode'</span>);
+            $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).removeClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+            $(<span class="hljs-string">'.pageloader, .infraloader'</span>).removeClass(<span class="hljs-string">'is-full'</span>);
+        }
+    })
+}
+
+<span class="hljs-comment">//Checkout mobile mode</span>
+<span class="hljs-keyword">if</span> ($(<span class="hljs-string">'.action-bar'</span>).length) {
+
+    <span class="hljs-comment">//Js Media Query</span>
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.matchMedia(<span class="hljs-string">'(max-width: 768px)'</span>).matches) {
+        $(<span class="hljs-string">'.action-bar'</span>).addClass(<span class="hljs-string">'is-mobile'</span>);
+        $(<span class="hljs-string">'.shop-wrapper'</span>).addClass(<span class="hljs-string">'is-mobile-mode'</span>);
+        $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).addClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+        $(<span class="hljs-string">'.pageloader, .infraloader'</span>).addClass(<span class="hljs-string">'is-full'</span>);
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-comment">//$('.mobile-navbar').removeClass('is-active');</span>
+        $(<span class="hljs-string">'.shop-wrapper'</span>).removeClass(<span class="hljs-string">'is-mobile-mode'</span>);
+        $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).removeClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+        $(<span class="hljs-string">'.pageloader, .infraloader'</span>).removeClass(<span class="hljs-string">'is-full'</span>);
+    }
+
+    <span class="hljs-comment">//resize handler</span>
+    $(<span class="hljs-built_in">window</span>).on(<span class="hljs-string">'resize'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>)</span>{
+        <span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.matchMedia(<span class="hljs-string">'(max-width: 768px)'</span>).matches) {
+            $(<span class="hljs-string">'.action-bar'</span>).addClass(<span class="hljs-string">'is-mobile'</span>);
+            $(<span class="hljs-string">'.shop-wrapper'</span>).addClass(<span class="hljs-string">'is-mobile-mode'</span>);
+            $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).addClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+            $(<span class="hljs-string">'.pageloader, .infraloader'</span>).addClass(<span class="hljs-string">'is-full'</span>);
+        } <span class="hljs-keyword">else</span> {
+            <span class="hljs-comment">//$('.mobile-navbar').removeClass('is-active');</span>
+            $(<span class="hljs-string">'.shop-wrapper'</span>).removeClass(<span class="hljs-string">'is-mobile-mode'</span>);
+            $(<span class="hljs-string">'.main-sidebar, .shop-quickview, .cart-quickview, .filters-quickview'</span>).removeClass(<span class="hljs-string">'is-pushed-mobile'</span>);
+            $(<span class="hljs-string">'.pageloader, .infraloader'</span>).removeClass(<span class="hljs-string">'is-full'</span>);
+        }
+    })
+}
+
+</code></pre>
+                            </div>
+
+                            <div class="section-txt" id="support">
+                                <h2><a id="Customer_support_1360"></a>Customer support</h2>
+                                <p>Please remember you have purchased a very affordable theme and you did not pay for a full-time web design agency. We will help with your issues, but these requests will be put on a relevant priority, regarding their nature. Support is provided for your comfort and for a best possible experience, so please be patient, polite and respectful, as we are towards you.</p>
+                                <h3><a id="Support_includes_1363"></a>Support includes</h3>
+                                <ul>
+                                    <li>Responding to questions or problems regarding the item and its features</li>
+                                    <li>Fixing bugs and reported issues</li>
+                                    <li>Providing updates</li>
+                                </ul>
+                                <h3><a id="Support_doesnt_include_1369"></a>Support doesn’t include</h3>
+                                <ul>
+                                    <li>Customization and installation services</li>
+                                    <li>Support for third party software and plugins</li>
+                                </ul>
+                                <h3><a id="Before_Support_1374"></a>Before Support</h3>
+                                <ul>
+                                    <li>Make sure your question is a valid Theme Issue and not a customization request</li>
+                                    <li>Make sure you have read through the documentation and any ressources before asking support on how to accomplish a task</li>
+                                    <li>Make sure to double check the theme FAQs.</li>
+                                    <li>If you have customized your theme and now have an issue, back-track to make sure you didn’t make a mistake. If you have made changes and can’t find the issue, please provide us with your changelog.</li>
+                                    <li>Almost 80% of the time we find that the solution to people’s issues can be solved with a simple “Google Search”. You might want to try that before seeking support. You might be able to fix the issue yourself much quicker than we can respond to your request.</li>
+                                    <li>Make sure to state the name of the theme you are having issues with when requesting support.</li>
+                                </ul>
+                            </div>
+
+                            <div class="section-txt" id="changelog">
+                                <h2><a id="Changelog_1383"></a>Changelog</h2>
+                                <p>You can find the version history (changelog.txt) file on Nephos-theme.zip folder or you can check the changelog on the theme sale page.</p>
+                                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, we’d be glad to help you if you have any questions relating to this theme. No guarantees, but we’ll do our best to assist and support you. If you have a more general question relating to Nephos, you might consider visiting our support forums and asking your question in the “Nephos support” section.</p>
+                                <pre><code>-----------------------------------------------------------------------------------------
+Version 0.0.1 - Apr 23, 2018
+-----------------------------------------------------------------------------------------
+
+- initial release
+
+</code></pre>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="footer-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 center">
+                        Nephos is a template designed and coded by <a href="https://cssninja.io" target="_blank">cssninja.io</a>
+                        <br>Access <a href="https://docs.nephos.cssninja.io" target="_blank">the Online Documentation</a> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 center">
+                        Css Ninja Studio © 2018. All rights reserved.
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/prettify.min.js"></script>
+        <script src="js/scripts.min.js"></script>
+    </body>
+</html>

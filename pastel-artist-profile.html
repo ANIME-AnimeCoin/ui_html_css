@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <title> Nephos :: Modern Bulma Ecommerce App and Dashboard</title>
+        <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+
+        <!--Core CSS -->
+        <link rel="stylesheet" href="assets/css/bulma.css">
+        <link rel="stylesheet" href="assets/scss/core.min.css">
+
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500" rel="stylesheet">
+
+        <!-- plugins -->
+        <link rel="stylesheet" href="assets/js/slick/slick.css">
+        <link rel="stylesheet" href="assets/js/slick/slick-theme.css">
+        <link rel="stylesheet" href="assets/js/webuipopover/jquery.webui-popover.min.css">
+        <link rel="stylesheet" href="assets/js/izitoast/css/iziToast.min.css">
+        <link rel="stylesheet" href="assets/js/zoom/zoom.css">
+        <link rel="stylesheet" href="assets/js/jpcard/card.css">
+        <link rel="stylesheet" href="assets/css/chosen/chosen.css">
+        <link rel="stylesheet" href="assets/css/icons.min.css">
+
+    </head>
+    <body>
+
+        <!-- Pageloader -->
+        <div class="pageloader"></div>
+        <div class="infraloader is-active"></div>
+        <!-- Main Sidebar-->
+        <div class="main-sidebar">
+            <div class="sidebar-brand">
+                <a href="pastel-.html"><img src="assets/images/favicon.png" alt=""></a>
+            </div>
+            <div class="sidebar-inner">
+                <ul class="icon-menu">
+                <!-- Shop sidebar trigger -->
+                <li>
+                    <a href="javascript:void(0);" id="open-shop" class="has-popover-top" data-placement="right"><i data-feather="user"></i></a>
+                    <div class="webui-popover-content">
+                        <!-- Popover Block -->
+                        <div class="popover-flex-block">
+                            <div class="icon-block">
+                                <i data-feather="folder"></i>
+                            </div>
+                            <div class="content-block">
+                                <label>User Account</label>
+                                <span>Manage your Pastel account</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class=" ">
+                    <a href="/pastel-wallet" class="has-popover-top" data-placement="right"><i data-feather="folder"></i></a>
+                    <!-- Order 39456 Popover -->
+                    <div class="webui-popover-content">
+                        <!-- Popover Block -->
+                        <div class="popover-flex-block">
+                            <div class="icon-block">
+                                <i data-feather="folder"></i>
+                            </div>
+                            <div class="content-block">
+                                <label>Wallet</label>
+                                <span>View your stored art</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                  <!-- Cart sidebar trigger -->
+                <li>
+                    <a href="javascript:void(0);" id="open-cart" class="has-popover-top" data-placement="right"><i data-feather="shopping-cart"></i><span class="cart-items"></span></a>
+                    <div class="webui-popover-content">
+                        <!-- Popover Block -->
+                        <div class="popover-flex-block">
+                            <div class="icon-block">
+                                <i data-feather="folder"></i>
+                            </div>
+                            <div class="content-block">
+                                <label>Cart</label>
+                                <span>Items in your cart</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                      <!-- Search trigger -->
+                <li>
+                    <a href="javascript:void(0);" id="close-search" class="is-hidden is-inactive"><i data-feather="x"></i></a>
+                    <a href="javascript:void(0);" id="open-search" class="has-popover-top" data-placement="right"><i data-feather="search"></i></a>
+                    <div class="webui-popover-content">
+                        <!-- Popover Block -->
+                        <div class="popover-flex-block">
+                            <div class="icon-block">
+                                <i data-feather="folder"></i>
+                            </div>
+                            <div class="content-block">
+                                <label>Search</label>
+                                <span>Find art by keywords</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li class="">
+                    <a href="pastel-categories.html" class="has-popover-top" data-placement="right"><i data-feather="grid"></i></a>
+                    <div class="webui-popover-content">
+                        <!-- Popover Block -->
+                        <div class="popover-flex-block">
+                            <div class="icon-block">
+                                <i data-feather="grid"></i>
+                            </div>
+                            <div class="content-block">
+                                <label>Buy Art</label>
+                                <span>View marketplace categories</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!-- Add to Wishlist -->
+                    <!-- <li>
+                        <a class="sidebar-whishlist" href="javascript:void(0)"><i data-feather="heart"></i></a>
+                    </li> -->
+                    <li class="">
+                        <a href="pastel-sell.html" class="has-popover-top" data-placement="right"><i data-feather="upload-cloud"></i></a>
+                        <div class="webui-popover-content">
+                            <div class="popover-flex-block">
+                                <div class="icon-block">
+                                    <i data-feather="upload-cloud"></i>
+                                </div>
+                                <div class="content-block">
+                                    <label>Sell Art</label>
+                                    <span>List artwork to sell</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="">
+                        <a href="pastel-masternodes.html" class="has-popover-top" data-placement="right"><i data-feather="layers"></i></a>
+                        <div class="webui-popover-content">
+                            <!-- Popover Block -->
+                            <div class="popover-flex-block">
+                                <div class="icon-block">
+                                    <i data-feather="layers"></i>
+                                </div>
+                                <div class="content-block">
+                                    <label>Masternodes</label>
+                                    <span>Monitor tactive Pastel Masternodes</span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                  <!-- Mobile mode trigger -->
+                <li class="is-hidden-desktop is-hidden-tablet">
+                    <a href="javascript:void(0);" id="mobile-mode"><i data-feather="smartphone"></i></a>
+                </li>
+                  </ul>
+                <!-- User account -->
+                <ul class="bottom-menu is-hidden-mobile">
+                    <li>
+                        <a href="authentication.html"><i data-feather="log-out"></i></a>
+                    </li>
+                   </ul>
+            </div>
+        </div>
+        <!-- /Main Sidebar-->
+
+        <!-- Shop quickview -->
+        <div class="shop-quickview has-background-image" data-background="http://via.placeholder.com/1280x853">
+            <div class="inner">
+                <!-- Header -->
+                <div class="quickview-header">
+                    <h2>Nephos</h2>
+                    <span id="close-shop-sidebar"><i data-feather="x"></i></span>
+                </div>
+                <!-- Shop menu -->
+                <ul class="shop-menu">
+                    <li>
+                        <a href="shop.html">
+                            <span>Shop</span>
+                            <i data-feather="grid"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="account.html">
+                            <span>My Account</span>
+                            <i data-feather="user"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="orders.html">
+                            <span>My Orders</span>
+                            <i data-feather="credit-card"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="wishlist.html">
+                            <span>My Wishlists</span>
+                            <i data-feather="heart"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Profile image -->
+                <ul class="user-profile">
+                    <li>
+                        <a href="account.html">
+                            <img src="http://via.placeholder.com/250x250" alt="">
+                            <span class="user">
+                                <span>ELie Daniels</span>
+                                <span>0 <small>Orders</small></span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Cart quickview -->
+        <div class="cart-quickview">
+            <div class="inner">
+                <!-- Header -->
+                <div class="quickview-header">
+                    <h2>Quick Cart</h2>
+                    <span id="close-cart-sidebar"><i data-feather="x"></i></span>
+                </div>
+                <!-- Total and checkout -->
+                <div class="cart-action">
+                    <span class="cart-total">
+                        <small>$</small>1521,94
+                    </span>
+                    <a href="cart.html" class="button primary-button feather-button is-bold raised">
+                        <span>Open Cart</span>
+                    </a>
+                </div>
+                <!-- Cart quickview body -->
+                <div class="cart-body">
+                    <ul class="shopping-cart-items">
+                        <!-- Item -->
+                        <li class="clearfix">
+                            <img src="http://via.placeholder.com/250x250" alt="" />
+                            <span class="item-meta">
+                                <span class="item-name">Conqueror</span>
+                                <span class="item-price">$385,00</span>
+                            </span>
+                            <span class="quantity">
+                                <input class="input is-rounded" type="number" value="1">
+                            </span>
+
+                            <span class="remove-item">
+                                <i data-feather="x" class="has-simple-popover" data-content="Remove from Cart" data-placement="top"></i>
+                            </span>
+                        </li>
+                        <!-- Item -->
+                        <li class="clearfix">
+                            <img src="http://via.placeholder.com/250x250" alt="" />
+                            <span class="item-meta">
+                                <span class="item-name">Gentleman</span>
+                                <span class="item-price">$329,00</span>
+                            </span>
+                            <span class="quantity">
+                                <input class="input is-rounded" type="number" value="1">
+                            </span>
+
+                            <span class="remove-item">
+                                <i data-feather="x" class="has-simple-popover" data-content="Remove from Cart" data-placement="top"></i>
+                            </span>
+                        </li>
+                        <!-- Item -->
+                        <li class="clearfix">
+                            <img src="http://via.placeholder.com/250x250" alt="" />
+                            <span class="item-meta">
+                                <span class="item-name">Child Desk</span>
+                                <span class="item-price">$278,47</span>
+                            </span>
+                            <span class="quantity">
+                                <input class="input is-rounded" type="number" value="1">
+                            </span>
+
+                            <span class="remove-item">
+                                <i data-feather="x" class="has-simple-popover" data-content="Remove from Cart" data-placement="top"></i>
+                            </span>
+                        </li>
+                        <!-- Item -->
+                        <li class="clearfix">
+                            <img src="http://via.placeholder.com/250x250" alt="" />
+                            <span class="item-meta">
+                                <span class="item-name">Design Shelf</span>
+                                <span class="item-price">$529,47,00</span>
+                            </span>
+                            <span class="quantity">
+                                <input class="input is-rounded" type="number" value="1">
+                            </span>
+
+                            <span class="remove-item">
+                                <i data-feather="x" class="has-simple-popover" data-content="Remove from Cart" data-placement="top"></i>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Main wrapper -->
+        <div class="shop-wrapper">
+
+            <!-- Search overlay -->
+            <div class="search-overlay"></div>
+
+            <!-- Search input -->
+            <div class="search-input-wrapper is-desktop is-hidden">
+                <div class="field">
+                    <div class="control">
+                        <input type="text" name="search" autofocus required>
+                        <span id="clear-search" role="button"><i data-feather="x"></i></span>
+                        <span class="search-help">Type the name of the product you are looking for</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Main section -->
+            <div class="section">
+                <!-- Container -->
+                <div class="container">
+
+                    <!-- Checkout step 2 -->
+                    <div class="columns account-header">
+                        <div class="column is-10 is-offset-1 checkout-wrapper is-tablet-landscape-padded">
+                            <!-- Title -->
+                            <!-- <div class="checkout-title">
+                                <h2>Profile</h2>
+                            </div> -->
+<!-- <br/><br/><br/>
+                            <div class="has-text-centered">
+                              <div class="columns">
+                                <div class="column has-text-centered">
+                                  <div class="">
+                                    <h3 class="title is-4 is-spaced is-italicX">Upload your digital artwork to the Pastel Blockchain Network</h3>
+                                    <h4 class="subtitle is-6 upperX is-italic">Our technology opens new markets for the art world</h4>
+                                  </div>
+                                </div>
+                                </div>
+                                </div>
+<br/><br/><br/>
+
+
+                   -->
+
+
+
+
+
+                   <div class="columns">
+                     <div class="container profile">
+
+
+                       <!-- <div class="modal" id="edit-preferences-modal">
+                         <div class="modal-background"></div>
+                         <div class="modal-card">
+                           <header class="modal-card-head">
+                             <p class="modal-card-title">Edit Preferences</p>
+                             <button class="delete"></button>
+                           </header>
+                           <section class="modal-card-body">
+                             <label class="label">Name</label>
+                             <p class="control">
+                               <input class="input" placeholder="Text input" type="text">
+                             </p>
+                             <label class="label">Username</label>
+                             <p class="control has-icon has-icon-right">
+                               <input class="input" placeholder="Text input" type="text" value="pmillerk">
+                             </p>
+                             <label class="label">Email</label>
+                             <p class="control has-icon has-icon-right">
+                               <input class="input" placeholder="Email input" type="text" value="hello@">
+                               <i class="fa fa-warning"></i>
+                               <span class="help is-danger">This email is invalid</span>
+                             </p>
+                             <div class="control">
+                               <div class="control-label is-pulled-left">
+                                 <label class="label">Date of Birth</label>
+                               </div>
+                               <span>
+                                 <span class="select">
+                                   <select>
+                                     <option>Month</option>
+                                     <option>With options</option>
+                                   </select>
+                                 </span>
+                                 <span class="select">
+                                   <select>
+                                     <option>Day</option>
+                                     <option>With options</option>
+                                   </select>
+                                 </span>
+                                 <span class="select">
+                                   <select>
+                                     <option>Year</option>
+                                     <option>With options</option>
+                                   </select>
+                                 </span>
+                               </span>
+                             </div>
+                             <label class="label">Description</label>
+                             <p class="control">
+                               <textarea class="textarea" placeholder="Describe Yourself!"></textarea>
+                             </p>
+                             <div class="content">
+                               <h1>Optional Information</h1>
+                             </div>
+                             <label class="label">Phone Number</label>
+                             <p class="control has-icon has-icon-right">
+                               <input class="input" placeholder="Text input" type="text" value="+1 *** *** 0535">
+                             </p>
+                             <label class="label">Work</label>
+                             <p class="control has-icon has-icon-right">
+                               <input class="input" placeholder="Text input" type="text" value="Greater Washington Publishing">
+                             </p>
+                             <label class="label">School</label>
+                             <p class="control has-icon has-icon-right">
+                               <input class="input" placeholder="Text input" type="text" value="George Mason University">
+                             </p>
+                           </section>
+                           <footer class="modal-card-foot">
+                             <a class="button is-primary modal-save">Save changes</a>
+                             <a class="button modal-cancel">Cancel</a>
+                           </footer>
+                         </div>
+                       </div> -->
+
+
+                       <div class="section profile-heading">
+                         <div class="columns is-mobile is-multiline">
+                           <div class="column is-2">
+                             <span class="header-icon user-profile-image">
+                               <figure class="image is-128x128">
+                                <img class="is-rounded" src="assets/images/avatars/elie.jpg">
+                              </figure>
+                             </span>
+                           </div>
+                           <div class="column is-4-tablet is-10-mobile name">
+                             <p>
+                               <span class="title is-bold">Elie Daniels</span>
+                               <br>
+                               <br>
+                             </p>
+                             <p class="subtitle is-7">
+                               The users profile bio would go here, of course. It could be two lines or more or whatever. We should probably limit the amount of characters to ~500 at most though.
+                             </p>
+                           </div>
+                           <div class="column is-2-tablet is-4-mobile has-text-centered">
+                             <p class="stat-val">4</p>
+                             <p class="stat-key">Artworks</p>
+                           </div>
+                           <div class="column is-2-tablet is-4-mobile has-text-centered">
+                             <p class="stat-val">128</p>
+                             <p class="stat-key">Followers</p>
+                           </div>
+                           <div class="column is-2-tablet is-4-mobile has-text-centered">
+                             <p class="stat-val">77</p>
+                             <p class="stat-key">Following</p>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="profile-options is-fullwidth">
+                         <div class="tabs is-fullwidth is-small">
+                           <ul>
+                             <li class="link is-active">
+                               <a>
+                                 <span class="icon">
+                                   <i class="fa fa-list"></i>
+                                 </span>
+                                 <span>My Art</span>
+                               </a>
+                             </li>
+                             <li class="link">
+                               <a>
+                                 <span class="icon">
+                                   <i class="fa fa-thumbs-up"></i>
+                                 </span>
+                                 <span>My Likes</span>
+                               </a>
+                             </li>
+                             <li class="link">
+                               <a>
+                                 <span class="icon">
+                                   <i class="fa fa-users"></i>
+                                 </span>
+                                 <span>Followers</span>
+                               </a>
+                             </li>
+                             <li class="link">
+                               <a>
+                                 <span class="icon">
+                                   <i class="fa fa-user"></i>
+                                 </span>
+                                 <span>Following</span>
+                               </a>
+                             </li>
+                           </ul>
+                         </div>
+                       </div>
+
+
+                  <div class="section has-background-white">
+
+                       <div class="columns is-mobile has-text-centered">
+
+                                                         <!-- Item -->
+                                                         <div class="column is-3-tablet is-6-mobile">
+                                                           <div class="flat-card">
+                                                                  <div class="image">
+                                                                      <img src="https://loremflickr.com/1920/1080/digital,painting?random=1" data-action="zoom" alt="">
+                                                                  </div>
+                                                                  <div class="product-info has-text-centered">
+                                                                      <a href="product.html"><h3 class="product-name">Red seat</h3></a>
+                                                                      <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                                                      <p class="product-price">
+                                                                          45,00
+                                                                      </p>
+                                                                  </div>
+                                                                  <div class="actions">
+                                                                      <div class="add"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart has-simple-popover" data-content="Add to Cart" data-placement="top"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></div>
+                                                                      <div class="like"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart has-simple-popover" data-content="Add to Wishlist" data-placement="top"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                                                                  </div>
+                                                              </div>
+                                                         </div>
+                                                         <!-- Item -->
+                                                         <div class="column is-3-tablet is-6-mobile">
+                                                           <div class="flat-card">
+                                                                  <div class="image">
+                                                                      <img src="https://loremflickr.com/1920/1080/digital,painting?random=2" data-action="zoom" alt="">
+                                                                  </div>
+                                                                  <div class="product-info has-text-centered">
+                                                                      <a href="product.html"><h3 class="product-name">Red seat</h3></a>
+                                                                      <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                                                      <p class="product-price">
+                                                                          45,00
+                                                                      </p>
+                                                                  </div>
+                                                                  <div class="actions">
+                                                                      <div class="add"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart has-simple-popover" data-content="Add to Cart" data-placement="top"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></div>
+                                                                      <div class="like"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart has-simple-popover" data-content="Add to Wishlist" data-placement="top"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                                                                  </div>
+                                                              </div>
+                                                            </div>
+
+                                                         <!-- Item -->
+                                                         <div class="column is-3-tablet is-6-mobile">
+                                                           <div class="flat-card">
+                                                                  <div class="image">
+                                                                      <img src="https://loremflickr.com/1920/1080/digital,painting?random=3" data-action="zoom" alt="">
+                                                                  </div>
+                                                                  <div class="product-info has-text-centered">
+                                                                      <a href="product.html"><h3 class="product-name">Red seat</h3></a>
+                                                                      <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                                                      <p class="product-price">
+                                                                          45,00
+                                                                      </p>
+                                                                  </div>
+                                                                  <div class="actions">
+                                                                      <div class="add"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart has-simple-popover" data-content="Add to Cart" data-placement="top"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></div>
+                                                                      <div class="like"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart has-simple-popover" data-content="Add to Wishlist" data-placement="top"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                                                                  </div>
+                                                              </div>
+                                                          </div>
+                                                          <!-- Item -->
+                                                          <div class="column is-3-tablet is-6-mobile">
+                                                            <div class="flat-card">
+                                                                   <div class="image">
+                                                                       <img src="https://loremflickr.com/1920/1080/digital,painting?random=4" data-action="zoom" alt="">
+                                                                   </div>
+                                                                   <div class="product-info has-text-centered">
+                                                                       <a href="product.html"><h3 class="product-name">Red seat</h3></a>
+                                                                       <p class="product-description">Lorem ipsum sit dolor amet</p>
+                                                                       <p class="product-price">
+                                                                           45,00
+                                                                       </p>
+                                                                   </div>
+                                                                   <div class="actions">
+                                                                       <div class="add"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart has-simple-popover" data-content="Add to Cart" data-placement="top"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></div>
+                                                                       <div class="like"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-heart has-simple-popover" data-content="Add to Wishlist" data-placement="top"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div>
+                                                                   </div>
+                                                               </div>
+                                                           </div>
+
+                                                     </div>
+
+                     </div>
+                   </div>
+
+
+</div>
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <!-- /Container -->
+            </div>
+            <!-- /Main section -->
+        </div>
+        <!-- /Main wrapper -->
+        <!-- Concatenated plugins -->
+        <script src="assets/js/app.js"></script>
+        <!-- Helios js -->
+        <script src="assets/js/nephos.js"></script>    </body>
+</html>
